@@ -23,4 +23,6 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 - Set up a local PC.
 - Re-trained myself to use ubuntu by installing anaconda via the terminal. Had to reinstall and correct the mistake of letting the install put the main anaconda folder in root (succeeded).
 - Put together the bibliography file in the project repository, that I will update and rearrange as needed. (format: Publication name; author; year + doi hyperlink)
-- 
+- Searched for the kind of format I should give the first TASEP model version.
+- Found Juraj's TASEPy that I could draw inspiration from.
+- Discussed with Ramon the fact that I can't rely on a rate-based formulaism like in the road_trial notebook, must think of a rule-based formulaism prior to returning to any kind of solver. Will begin on Day 3.
