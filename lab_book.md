@@ -21,5 +21,6 @@ _The following lab book contains daily entries of the tasks carried out by Gabin
 ## Day 2 - 16/01
 - Prepared this lab book file.
 - Set up a local PC.
-- 
+- Re-trained myself to use ubuntu by installing anaconda via the terminal.
+- Put together the bibliography file in the project repository.
 - 
