@@ -1,1 +1,1 @@
-Folder containing the jupyter notebooks containing code relevant to the project.
+Folder containing the jupyter notebooks or other python-based tools relevant to the project.
