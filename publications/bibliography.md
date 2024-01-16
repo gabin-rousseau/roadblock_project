@@ -25,6 +25,7 @@ JOURNAL OF THE ROYAL SOCIETY INTERFACE 2008](https://doi.org/10.1098/rsif.2008.
 - [TASEP modelling provides a parsimonious explanation for the ability of a single uORF to derepress translation during the integrated stress response
 Dmitry E Andreev et al.,
 eLife 2018](https://doi.org/10.7554/eLife.32563)
+![The ICIER model distinguishes scanning ribosomes from elongating ribosomes in a TASEP framework](https://iiif.elifesciences.org/lax/32563%2Felife-32563-fig1-v2.tif/full/1500,/0/default.jpg)
 - [Biologically motivated three-species exclusion model: Effects of leaky scanning and overlapping genes on initiation of protein synthesis
 Bhavya Mishra and Debashish Chowdhury
 Phys. Rev. E 100, 022106 – Published 6 August 2019](https://doi.org/10.1103/PhysRevE.100.022106)
