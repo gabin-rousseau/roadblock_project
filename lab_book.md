@@ -17,7 +17,7 @@ _The following lab book contains daily entries of the tasks carried out by Gabin
 - Took the mandatory courses about the SBS buildings and Health and Safety measures, took two courses that introduced me properly to github and the .md format.
 
 ![Doodle of the initial model design for Ssd1 and translation initiation](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/model_doodle_150124.png)
-
+E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation complex
 ## Day 2 - 16/01
 - Prepared this lab book file.
 - Set up a local PC.
