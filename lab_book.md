@@ -22,5 +22,5 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 - Prepared this lab book file.
 - Set up a local PC.
 - Re-trained myself to use ubuntu by installing anaconda via the terminal.
-- Put together the bibliography file in the project repository.
+- Put together the bibliography file in the project repository, that I will update and rearrange as needed. (format: Publication name; author; year + doi hyperlink)
 - 
