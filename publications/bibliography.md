@@ -31,3 +31,5 @@ Bhavya Mishra and Debashish Chowdhury
 Phys. Rev. E 100, 022106 – Published 6 August 2019](https://doi.org/10.1103/PhysRevE.100.022106)
 - Complex recent paper combining model and experiment : [Li, K., Kong, J., Zhang, S. et al. Distance-dependent inhibition of translation initiation by downstream out-of-frame AUGs is consistent with a Brownian ratchet process of ribosome scanning. Genome Biol 23, 254 (2022).](https://doi.org/10.1186/s13059-022-02829-1)
 
+## Python application of TASEP
+- [TASEPy: a Python-based package to iteratively solve the inhomogeneous exclusion process; Ciandrini _et al._; 2023](https://doi.org/10.48550/arXiv.2308.00847)
