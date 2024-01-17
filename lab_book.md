@@ -30,4 +30,4 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 ![TASEpy sketch of the TASEP with a particle of length 3](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/l3_TASEPy.png)
 ## Day 3 - 17/01
 - Completed the rini v0.1 TASEP model on python! (short for roadblock_ini)
-- 
+![First output of the TASEP model, here in the form of the total number of ribosomes that complete scanning over time](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/passed_graph_v0-1.png)
