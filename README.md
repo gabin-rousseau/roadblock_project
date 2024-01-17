@@ -15,3 +15,5 @@ Contains various images I intend to link via github (e.g. the model doodle that 
 Contains the bibliography
 ## python
 Contains all coding files used to develop the model
+## data
+Contains data produced by the model.
