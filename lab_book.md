@@ -29,3 +29,5 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 - Discussed with Ramon the fact that I can't rely on a rate-based formulaism like in the road_trial notebook, must think of a rule-based formulaism prior to returning to any kind of solver. Will begin on Day 3.
 ![TASEpy sketch of the TASEP with a particle of length 3](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/l3_TASEPy.png)
 ## Day 3 - 17/01
+- Completed the rini v0.1 TASEP model on python! (short for roadblock_ini)
+- 
