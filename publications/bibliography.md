@@ -33,3 +33,7 @@ Phys. Rev. E 100, 022106 – Published 6 August 2019](https://doi.org/10.1103/Ph
 
 ## Python application of TASEP
 - [TASEPy: a Python-based package to iteratively solve the inhomogeneous exclusion process; Ciandrini _et al._; 2023](https://doi.org/10.48550/arXiv.2308.00847)
+
+## 43S footprint on mRNA (30bp protected)
+- [Preinitiation Complex Loading onto mRNAs with Long versus Short 5′ TLs; Weiss _et al._; 2022](https://doi.org/10.3390%2Fijms232113369)
+
