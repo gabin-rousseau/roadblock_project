@@ -18,6 +18,7 @@ _The following lab book contains daily entries of the tasks carried out by Gabin
 
 ![Doodle of the initial model design for Ssd1 and translation initiation](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/model_doodle_150124.png)
 E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation complex
+
 ## Day 2 - 16/01
 - Prepared this lab book file.
 - Set up a local PC.
@@ -31,3 +32,7 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 ## Day 3 - 17/01
 - Completed the [rini v0.1 TASEP model on python! (short for roadblock_ini)](https://github.com/gabin-rousseau/roadblock_project/blob/main/python/rini_v0-1.ipynb)
 ![First output of the TASEP model, here in the form of the total number of ribosomes that complete scanning over time](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/passed_graph_v0-1.png)
+- Prepared one slide for Edward's meeting.
+
+## Day 4 - 18/01
+-Attended Ramon's lab meeting where Augustinas discussed his paper focusing on infering transcriptome-wide burst size and frequency associated with cell age/cycle _via_ a mathematical model
