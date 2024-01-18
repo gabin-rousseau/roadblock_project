@@ -35,4 +35,4 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 - Prepared one slide for Edward's meeting.
 
 ## Day 4 - 18/01
--Attended Ramon's lab meeting where Augustinas discussed his paper focusing on infering transcriptome-wide burst size and frequency associated with cell age/cycle _via_ a mathematical model
+- Attended Ramon's lab meeting where Augustinas discussed his paper focusing on infering transcriptome-wide burst size and frequency associated with cell age/cycle _via_ a mathematical model
