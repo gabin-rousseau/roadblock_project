@@ -40,7 +40,7 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 ![White-board diagrams summarising the next steps for the model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_meeting1.jpg)
 - Ramon is happy with the first version and thinks the logic is solid. __Alpha, Beta and P should all be part of the user input__ (we'll assume P is the same for all sites for now). However, we should make sure we can extract THE variable of interest while checking the model fits the behaviour expected from a TASEP. Indeed, while my model can be considered closer to a cellular automatom, TASEP tend to follow  the Gillespie algortithm and are characterised by a __PHASE DIAGRAM__ (see diagram to the left of "phase" on the right of the photo). Therefore, the next steps for the model are as follows:
   1. Get the model to calculate the rate of particle passage.
-  2. Plot against alpha and beta.
+  2. Plot that "initiation" against alpha and beta.
   3. Make phase diagram.
   4. Compare with local/general density measured over time. Does the phase diagram profile make sense with the expected/effective density profiles?
 - Attended Edward's lab meeting. See how binding rates and particle configurations interact with the initiation rate. Discussed the continuous process that enables one to improve their communication skills in presentations. Highlighting the right phrase, color coding text to match figures, putting just the right amount of information on figures, figure choice... For my project presentation, I should dedicate a slide to the question and why we are asking it.  
