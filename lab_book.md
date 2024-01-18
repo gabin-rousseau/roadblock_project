@@ -35,4 +35,11 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 - Prepared one slide for Edward's meeting.
 
 ## Day 4 - 18/01
-- Attended Ramon's lab meeting where Augustinas discussed his paper focusing on infering transcriptome-wide burst size and frequency associated with cell age/cycle _via_ a mathematical model
+- Attended Ramon's lab meeting where Augustinas discussed his paper focusing on infering transcriptome-wide burst size and frequency associated with cell age/cycle _via_ a mathematical model.
+- Discussed the first version of the model with Ramon (image below):
+![White-board diagrams summarising the next steps for the model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_meeting1.jpg)
+- Ramon is happy with the first version and thinks the logic is solid. __Alpha, Beta and P should all be part of the user input__ (we'll assume P is the same for all sites for now). However, we should make sure we can extract THE variable of interest while checking the model fits the behaviour expected from a TASEP. Indeed, while my model can be considered closer to a cellular automatom, TASEP tend to follow  the Gillespie algortithm and are characterised by a __PHASE DIAGRAM__ (see diagram to the left of "phase" on the right of the photo). Therefore, the next steps for the model are as follows:
+  1 - Get the model to calculate the rate of particle passage. 
+  2 - Plot against alpha and beta.
+  3 - Make phase diagram.
+  4 - compare with local density.
