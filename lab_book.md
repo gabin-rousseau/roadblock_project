@@ -51,7 +51,7 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 
 ---
 # Week 1 - 22/01 --> 26/01
-- [] Finish or get close to finishing the literature review.
+- [ ] Finish or get close to finishing the literature review.
 
 For rini v0.2:
 - [ ] Add alpha, beta and psi as user input variables.
