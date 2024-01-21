@@ -43,4 +43,21 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
   2. Plot that "initiation" against alpha and beta.
   3. Make phase diagram.
   4. Compare with local/general density measured over time. Does the phase diagram profile make sense with the expected/effective density profiles?
-- Attended Edward's lab meeting. See how binding rates and particle configurations interact with the initiation rate. Discussed the continuous process that enables one to improve their communication skills in presentations. Highlighting the right phrase, color coding text to match figures, putting just the right amount of information on figures, figure choice... For my project presentation, I should dedicate a slide to the question and why we are asking it.  
+- Attended Edward's lab meeting. See how binding rates and particle configurations interact with the initiation rate. Discussed the continuous process that enables one to improve their communication skills in presentations. Highlighting the right phrase, color coding text to match figures, putting just the right amount of information on figures, figure choice... For my project presentation, I should dedicate a slide to the question and why we are asking it.
+
+## Day 5 - 19/01
+- Work remotely to make progress on the literature review.
+
+
+---
+# Week 1 - 22/01 --> 26/01
+- [] Finish or get close to finishing the literature review.
+
+For rini v0.2:
+- [ ] Add alpha, beta and psi as user input variables.
+- [ ] Get the rate of initiation I as an output.
+- [ ] Plot the change in I against alpha and beta.
+- [ ] Plot alpha against beta to obtain a phase diagram.
+- [ ] Loop in local/lattice-wide measurements to compare to the phase diagram
+
+## Day 6 - 22/01
