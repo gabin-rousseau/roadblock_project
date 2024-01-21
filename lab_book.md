@@ -50,7 +50,7 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 
 
 ---
-# Week 1 - 22/01 --> 26/01
+# Week 2 - 22/01 --> 26/01
 - [ ] Finish or get close to finishing the literature review.
 
 For rini v0.2:
