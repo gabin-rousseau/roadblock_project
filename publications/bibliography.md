@@ -31,6 +31,29 @@ Bhavya Mishra and Debashish Chowdhury
 Phys. Rev. E 100, 022106 – Published 6 August 2019](https://doi.org/10.1103/PhysRevE.100.022106)
 - Complex recent paper combining model and experiment : [Li, K., Kong, J., Zhang, S. et al. Distance-dependent inhibition of translation initiation by downstream out-of-frame AUGs is consistent with a Brownian ratchet process of ribosome scanning. Genome Biol 23, 254 (2022).](https://doi.org/10.1186/s13059-022-02829-1)
 
+## Translation initiation mechanism
+- [Mechanism and Regulation of Protein Synthesis in Saccharomyces cerevisiae; Thomas E Dever,   Terri Goss Kinzy, Graham D Pavitt; Genetics, Volume 203, Issue 1, 1 May 2016, Pages 65–107](https://doi.org/10.1534/genetics.115.186221)
+- [Translation initiation by cap-dependent ribosome recruitment: Recent insights and open questions
+Nikolay E. Shirokikh, Thomas Preiss
+WIRES RNA
+First published: 06 April 2018](https://doi.org/10.1002/wrna.1473)
+## Eukaryotic RNA scanning discovery
+- [Point mutations define a sequence flanking the AUG initiator codon that modulates translation by eukaryotic ribosomes
+M Kozak, Cell 1986
+PMID: 3943125](https://doi.org/10.1016/0092-8674(86)90762-2 )
+
+## Ssd1, RNA binding and translation initiation
+- Showed that Ssd1 binds RNA: [Ssd1p of Saccharomyces cerevisiae Associates with RNA
+Uesono et al., JBC 1997](https://doi.org/10.1074/jbc.272.26.16103)
+- Mapped Ssd1 binding targets and found motif in 5'UTRs: [Diverse RNA-Binding Proteins Interact with Functionally Related Sets of RNAs, Suggesting an Extensive Regulatory System
+Daniel J Hogan, Daniel P Riordan, André P Gerber , Daniel Herschlag , Patrick O Brown
+PLoS Biology, 2008](https://doi.org/10.1371/journal.pbio.0060255)
+- Showed that Ssd1 regulates translation: [Cbk1 Regulation of the RNA-Binding Protein Ssd1 Integrates Cell Fate with Translational Control
+Jaclyn M. Jansen, Antony G. Wanless, Christopher W. Seidel,2 and Eric L. Weiss
+Current Biology, 2009](https://doi.org/10.1016/j.cub.2009.10.071)
+- Mapped Ssd1 binding targets precisely, found precise motif in 5'UTRs and verified it in vitro. (Our paper!): [Yeast Ssd1 is a non-enzymatic member of the RNase II family with an alternative RNA recognition site
+Bayne et al., Nucleic Acids Research, 2022](https://doi.org/10.1093/nar/gkab615)
+---
 ## Python application of TASEP
 - [TASEPy: a Python-based package to iteratively solve the inhomogeneous exclusion process; Ciandrini _et al._; 2023](https://doi.org/10.48550/arXiv.2308.00847)
 
@@ -41,3 +64,5 @@ Phys. Rev. E 100, 022106 – Published 6 August 2019](https://doi.org/10.1103/Ph
 - [Nonequilibrium Steady States of Matrix Product Form: A Solver's Guide; R. A. Blythe, M. R. Evans; 2007](https://doi.org/10.48550/arXiv.0706.1678)
 - [Rényi entropy of the totally asymmetric exclusion process; Anthony J Wood et al 2017 J. Phys. A: Math. Theor. 50 475005](http://dx.doi.org/10.1088/1751-8121/aa90fe)
 ![TASEP phase diagram and the expected steady-state densities for each phase type](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/phase_diagram_densities.jpg)
+- [An Exact Formula for the Statistics of the Current in the TASEP with Open Boundaries; Alexandre Lazarescu, Kirone Mallick; 2011](https://doi.org/10.48550/arXiv.1104.5089)
+![Another TASEP phase diagram showcasing expected bulk densities and current values depending on the active phase](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_phasedensities2.png)
