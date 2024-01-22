@@ -40,4 +40,4 @@ Phys. Rev. E 100, 022106 – Published 6 August 2019](https://doi.org/10.1103/Ph
 ## TASEP phase diagram
 - [Nonequilibrium Steady States of Matrix Product Form: A Solver's Guide; R. A. Blythe, M. R. Evans; 2007](https://doi.org/10.48550/arXiv.0706.1678)
 - [Rényi entropy of the totally asymmetric exclusion process; Anthony J Wood et al 2017 J. Phys. A: Math. Theor. 50 475005](http://dx.doi.org/10.1088/1751-8121/aa90fe)
-- ![TASEP phase diagram and the expected steady-state densities for each phase type](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/phase_diagram_densities.jpg)
+![TASEP phase diagram and the expected steady-state densities for each phase type](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/phase_diagram_densities.jpg)
