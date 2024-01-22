@@ -65,6 +65,6 @@ For rini v0.2:
   - 2 key papers on translation initiation in C. cerevisiae.
   - 1 classic paper on the discovery of RNA scanning by Marilym Kozak
   - The recommendation to seek a background reference if needed for RNA 5' secondary structure, Pab1/PABP poly(A)-binding protein forming an auto-regulating loop with the 5'UTR.
-  - 4 papers on Ssd1 and its role binding RNA and in translation initiation
+  - 4 papers on Ssd1 and its role binding RNA and in translation initiation. Pointed out I can also find a paper on Ssd1 regulating CLN2 translation.
 ![Another TASEP phase diagram showcasing expected bulk densities and current values depending on the active phase](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_phasedensities2.png) 
   
