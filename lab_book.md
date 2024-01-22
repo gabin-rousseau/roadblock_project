@@ -43,7 +43,7 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
   2. Plot that "initiation" against alpha and beta.
   3. Make phase diagram.
   4. Compare with local/general density measured over time. Does the phase diagram profile make sense with the expected/effective density profiles?
-- Attended Edward's lab meeting. See how binding rates and particle configurations interact with the initiation rate. Discussed the continuous process that enables one to improve their communication skills in presentations. Highlighting the right phrase, color coding text to match figures, putting just the right amount of information on figures, figure choice... For my project presentation, I should dedicate a slide to the question and why we are asking it.
+- Attended Edward's lab meeting. See how binding rates and particle configurations interact with the initiation rate. Discussed the continuous process that enables one to improve their communication skills in presentations. Highlighting the right phrase, color coding text to match figures, putting just the right amount of information on figures, figure choice... For my project presentation, I should dedicate a slide to the question and why we are asking it. Edward made me notice I was confusing DNA bp with RNA nt.
 
 ## Day 5 - 19/01
 - Work remotely to make progress on the literature review.
@@ -54,10 +54,17 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 - [ ] Finish or get close to finishing the literature review.
 
 For rini v0.2:
-- [ ] Add alpha, beta and psi as user input variables.
+- [X] Add alpha, beta and psi as user input variables.
 - [ ] Get the rate of initiation I as an output.
 - [ ] Plot the change in I against alpha and beta.
 - [ ] Plot alpha against beta to obtain a phase diagram.
-- [ ] Loop in local/lattice-wide measurements to compare to the phase diagram
-
+- [X] Loop in local density measurements to compare with phase diagram.
 ## Day 6 - 22/01
+- Finished rini v0.2, which involved changing some variable names, add rates to the function arguments, adding default values for all arguments and add local density to the output. Plotting early graphs of density vs. time in a+b conditions satisfying all 3 typical TASEP phases (low-density, high-density, maximum-current) seemed to be promising overall, although the stochasticity of the model can make the trend skewed one way or another in certain runs. 
+- Received Edward's reference list (added to the bibliography). Contains:
+  - 2 key papers on translation initiation in C. cerevisiae.
+  - 1 classic paper on the discovery of RNA scanning by Marilym Kozak
+  - The recommendation to seek a background reference if needed for RNA 5' secondary structure, Pab1/PABP poly(A)-binding protein forming an auto-regulating loop with the 5'UTR.
+  - 4 papers on Ssd1 and its role binding RNA and in translation initiation
+![Another TASEP phase diagram showcasing expected bulk densities and current values depending on the active phase](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_phasedensities2.png) 
+  
