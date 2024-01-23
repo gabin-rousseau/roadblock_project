@@ -55,9 +55,9 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 
 For rini v0.2:
 - [X] Add alpha, beta and psi as user input variables.
-- [ ] Get the rate of initiation I as an output.
-- [ ] Plot the change in I against alpha and beta.
-- [ ] Plot alpha against beta to obtain a phase diagram.
+- [X] Get the rate of initiation I as an output.
+- [X] Plot the change in I against alpha and beta.
+- [X] Plot alpha against beta to obtain a phase diagram.
 - [X] Loop in local density measurements to compare with phase diagram.
 ## Day 6 - 22/01
 - Finished rini v0.2, which involved changing some variable names, add rates to the function arguments, adding default values for all arguments and add local density to the output. Plotting early graphs of density vs. time in a+b conditions satisfying all 3 typical TASEP phases (low-density, high-density, maximum-current) seemed to be promising overall, although the stochasticity of the model can make the trend skewed one way or another in certain runs. 
@@ -66,5 +66,14 @@ For rini v0.2:
   - 1 classic paper on the discovery of RNA scanning by Marilym Kozak
   - The recommendation to seek a background reference if needed for RNA 5' secondary structure, Pab1/PABP poly(A)-binding protein forming an auto-regulating loop with the 5'UTR.
   - 4 papers on Ssd1 and its role binding RNA and in translation initiation. Pointed out I can also find a paper on Ssd1 regulating CLN2 translation.
-![Another TASEP phase diagram showcasing expected bulk densities and current values depending on the active phase](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_phasedensities2.png) 
+![Another TASEP phase diagram showcasing expected bulk densities and current values depending on the active phase](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_phasedensities2.png)
+## Day 7 - 23/01
+- Completed 3 functions that complement rini to respond to the week's goals:
+  1. rini_I estimates the "initiation" rate I in a rini run based on the coefficient for a line of best fit (calculate from t=L onwards to remove the startup assuming peak conditions)
+  2. rini_IvAB plots I against alpha and beta respectively. If plotted against alpha, alpha values are determined in a numpy rangem while beta remains at a constant value (by default 1) and vice versa.
+  3. rini_AvB draws a phase diagram on which either pre-determined rini points or a set amount of random points are plotted. Points are numerically labelled and the function prints the associated median density alongside the expected bulk density for the phase the point corresponds to. (low density, high density, maximum-current).
+![rini v0.2 line rate of initiation regression figure](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_ratefit.png)
+![rini v0.2 phase diagram](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_phases.png)
+## Day 8 - 24/01
+  
   
