@@ -4,15 +4,15 @@
 ---
 ## Starting references:
 - [Beyond the triplet code: context cues transform translation
-GA Brar, Cell, 2016](http://doi.org/10.1016/j.cell.2016.09.022)
+GA Brar, Cell, 2016](http://doi.org/10.1016/j.cell.2016.09.022): Translation initiation can be triggered by non-canonical signals like RAN. 5' methylated adenines can mediate recruiting the translation initiation factor eIF3, skipping cap-binding by eIF4E.
 - [Physical and Mathematical Modeling in Experimental Papers
-W. Möbius and L. Laan, Cell, 2015](http://doi.org/10.1016/j.cell.2015.12.006)
-- Translational control review : [Gebauer, F., Hentze, M. Molecular mechanisms of translational control. Nat Rev Mol Cell Biol 5, 827–835 (2004)](https://doi.org/10.1038/nrm1488)
+W. Möbius and L. Laan, Cell, 2015](http://doi.org/10.1016/j.cell.2015.12.006): guidelines on the decision to model in addition to exclusive experimentation.
+- Translational control review : [Gebauer, F., Hentze, M. Molecular mechanisms of translational control. Nat Rev Mol Cell Biol 5, 827–835 (2004)](https://doi.org/10.1038/nrm1488):IRP binding blocks the recruitment of the 43S complex to ferritin mRNA that is engaged with the eIF4F complex, interfering with the formation of the PIC before scanning can progress; hnRNP-K–hnRNP-E1 targets the initiation factors rather than the ribosomal subunits themselves (inhibit 60s recruitment in late initiation).
 - Edward's review on translational/post-transciptional control (incl. Ssd1) : [Post-transcriptional control of fungal cell wall synthesis
 Hall RA, Wallace EWJ, The Cell Surface (2022)](http://doi.org/10.1016/j.tcsw.2022.100074)
 
 ## Juraj's recommended publications to understand TASEP in the context of translation
-- [MATHEMATICAL AND COMPUTATIONAL MODELLING OF RIBOSOMAL MOVEMENT AND PROTEIN SYNTHESIS: AN OVERVIEW; T. Haar; 2012](https://doi.org/10.5936/csbj.201204002)
+- [MATHEMATICAL AND COMPUTATIONAL MODELLING OF RIBOSOMAL MOVEMENT AND PROTEIN SYNTHESIS: AN OVERVIEW; T. Haar; 2012](https://doi.org/10.5936/csbj.201204002): "Characteristics of early versions of the TASEP include assumptions of limitless ribosome-supply, a single, uniform elongation rate-constant along the mRNA, and a coarse-grained description of the elongation process, which is simply regarded as a “hopping-probability”. Recent modifications to the basic TASEP allowed analyses of codon-specific elongation rates [26, 27, 28, 30, 33], limiting supplies of ribosomes [31, 37, 38] or tRNAs [35], and traffic on circularised mRNAs [25], thus making the approach more physiologically relevant. Several recent studies also described approaches that go beyond the description of ribosome movement as a simple hopping probability, and instead consider the detailed sub-steps of the translation elongation cycle [29, 32, 33, 36, 39]."
 - [mRNA translation from a unidirectional traffic perspective; Shyam, Sharma; 2023](https://doi.org/10.48550/arXiv.2312.12062)
 - [Analysing GCN4 translational control in yeast by stochastic chemical kinetics modelling and simulation; You _et al._; 2011](https://doi.org/10.1186/1752-0509-5-131)
 - [Stochastic scanning events on the GCN4 mRNA 5’ untranslated region generate cell-to-cell heterogeneity in the yeast nutritional stress response; Meng _et al._; 2023](https://doi.org/10.1093/nar/gkad433)
@@ -21,10 +21,11 @@ Hall RA, Wallace EWJ, The Cell Surface (2022)](http://doi.org/10.1016/j.tcsw.202
 ## Edward's recommended publications to get an overview of translation **initiation** modelling
 - [Control of translation initiation: a model-based analysis from limited experimental data
 Richard J Dimelow  and Stephen J Wilkinson
-JOURNAL OF THE ROYAL SOCIETY INTERFACE 2008](https://doi.org/10.1098/rsif.2008.0221)
+JOURNAL OF THE ROYAL SOCIETY INTERFACE 2008](https://doi.org/10.1098/rsif.2008.0221):we suggest that the rate of translation initiation is most strongly influenced by one of two reactions: either the guanine nucleotide exchange reaction involving initiation factors eIF2 and eIF2B or the assembly of the multifactor complex from its constituent protein/tRNA containing complexes. ... We approximate [initiation] as consisting of 12 key reactions and make the assumption that all eIF2 molecules are bound to GDP or GTP. ... All reactions were modelled using reversible mass-action kinetics, apart from reaction 12 [(final assembly of the ribosomal complex and start codon identification, resulting in translation)], which was assumed irreversible.
+![Figure 2 Rate of protein synthesis versus initiation factor concentration for (a) eIF1A, (b) eIF4E, (c) eIF4G and (d) eIF5B. The graphs show the experimental data points (diamond) and model-predicted values (solid line).](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/51fig2.jpg)
 - [TASEP modelling provides a parsimonious explanation for the ability of a single uORF to derepress translation during the integrated stress response
 Dmitry E Andreev et al.,
-eLife 2018](https://doi.org/10.7554/eLife.32563)
+eLife 2018](https://doi.org/10.7554/eLife.32563): What designates some uORFs as providers of stress resistance? To explore this, we developed a simple stochastic model of Initiation Complexes Interference with Elongating Ribosomes (ICIER) that is based on the Totally Asymmetric Simple Exclusion Process (TASEP). ... In ICIER, we represent scanning and elongating ribosomes as two separate types of particles with different dynamic properties, with the possibility of transformation of one into the other at specific sites. The parameters used for the modelling were based on estimates from experimental quantitative measurements of mRNA translation in eukaryotic systems.
 ![The ICIER model distinguishes scanning ribosomes from elongating ribosomes in a TASEP framework](https://iiif.elifesciences.org/lax/32563%2Felife-32563-fig1-v2.tif/full/1500,/0/default.jpg)
 - [Biologically motivated three-species exclusion model: Effects of leaky scanning and overlapping genes on initiation of protein synthesis
 Bhavya Mishra and Debashish Chowdhury
@@ -66,3 +67,6 @@ Bayne et al., Nucleic Acids Research, 2022](https://doi.org/10.1093/nar/gkab615)
 ![TASEP phase diagram and the expected steady-state densities for each phase type](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/phase_diagram_densities.jpg)
 - [An Exact Formula for the Statistics of the Current in the TASEP with Open Boundaries; Alexandre Lazarescu, Kirone Mallick; 2011](https://doi.org/10.48550/arXiv.1104.5089)
 ![Another TASEP phase diagram showcasing expected bulk densities and current values depending on the active phase](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_phasedensities2.png)
+
+## TASEP with defects
+- [Totally asymmetric exclusion process with site-wise dynamic disorder; Warclaw _et. al_; 2019](https://doi.org/10.1088/1751-8121/aafb8a): We propose an extension of the totally asymmetric simple exclusion process (TASEP) in which particles hopping along a lattice can be blocked by obstacles that dynamically attach/detach from lattice sites.
