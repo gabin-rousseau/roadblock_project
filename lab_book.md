@@ -28,15 +28,18 @@ E=free to access, X=occupied, footprint corresponds to the 43s pre-initiation co
 - Found Juraj's TASEPy that I could draw inspiration from.
 - Literature shared by Edward that looks more closely at initiation doesn't seem to have a deep focus on initiation as opposed to elongation, but from what I could see, it looked like the main difference I should take into account will be the format of the lattice and particles. (work on elongation looks at codons, whereas we are more interested in the 43S PIC's ~50bp footprint. Lattice unit: BP? Take inspiration from Juraj's TASEPy and define 43S as a l=50 particle with a fixed site tracked by the model?) 
 - Discussed with Ramon the fact that I can't rely on a rate-based formulaism like in the road_trial notebook, must think of a rule-based formulaism prior to returning to any kind of solver. Will begin on Day 3.
+  
 ![TASEpy sketch of the TASEP with a particle of length 3](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/l3_TASEPy.png)
 ## Day 3 - 17/01
 - Completed the [rini v0.1 TASEP model on python! (short for roadblock_ini)](https://github.com/gabin-rousseau/roadblock_project/blob/main/python/rini_v0-1.ipynb)
+
 ![First output of the TASEP model, here in the form of the total number of ribosomes that complete scanning over time](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/passed_graph_v0-1.png)
 - Prepared one slide for Edward's meeting.
 
 ## Day 4 - 18/01
 - Attended Ramon's lab meeting where Augustinas discussed his paper focusing on infering transcriptome-wide burst size and frequency associated with cell age/cycle _via_ a mathematical model.
 - Discussed the first version of the model with Ramon (image below):
+
 ![White-board diagrams summarising the next steps for the model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_meeting1.jpg)
 - Ramon is happy with the first version and thinks the logic is solid. __Alpha, Beta and P should all be part of the user input__ (we'll assume P is the same for all sites for now). However, we should make sure we can extract THE variable of interest while checking the model fits the behaviour expected from a TASEP. Indeed, while my model can be considered closer to a cellular automatom, TASEP tend to follow  the Gillespie algortithm and are characterised by a __PHASE DIAGRAM__ (see diagram to the left of "phase" on the right of the photo). Therefore, the next steps for the model are as follows:
   1. Get the model to calculate the rate of particle passage.
@@ -66,6 +69,7 @@ For rini v0.2:
   - 1 classic paper on the discovery of RNA scanning by Marilym Kozak
   - The recommendation to seek a background reference if needed for RNA 5' secondary structure, Pab1/PABP poly(A)-binding protein forming an auto-regulating loop with the 5'UTR.
   - 4 papers on Ssd1 and its role binding RNA and in translation initiation. Pointed out I can also find a paper on Ssd1 regulating CLN2 translation.
+
 ![Another TASEP phase diagram showcasing expected bulk densities and current values depending on the active phase](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_phasedensities2.png)
 ## Day 7 - 23/01
 - Completed 3 functions that complement rini to respond to the week's goals:
@@ -74,7 +78,9 @@ For rini v0.2:
   3. rini_AvB draws a phase diagram on which either pre-determined rini points or a set amount of random points are plotted. Points are numerically labelled and the function prints the associated median density alongside the expected bulk density for the phase the point corresponds to. (low density, high density, maximum-current).
  
 - Discussed these with Ramon. He is happy with the results and suggested linking the IvAB and AvB results to the average of multiple runs rather than just one. Now, I should focus more on Edward's references to discuss the next steps on Thursday.
+
 ![rini v0.2 line rate of initiation regression figure](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_ratefit.png)
+
 ![rini v0.2 phase diagram](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_phases.png)
 ## Day 8 - 24/01
 - Explored the literature with the intent to find some contextual information that could guide the next steps for the model. Added some key sentences from references in the bibliogaphy.
