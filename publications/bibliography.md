@@ -29,7 +29,12 @@ eLife 2018](https://doi.org/10.7554/eLife.32563): What designates some uORFs as 
 ![The ICIER model distinguishes scanning ribosomes from elongating ribosomes in a TASEP framework](https://iiif.elifesciences.org/lax/32563%2Felife-32563-fig1-v2.tif/full/1500,/0/default.jpg)
 - [Biologically motivated three-species exclusion model: Effects of leaky scanning and overlapping genes on initiation of protein synthesis
 Bhavya Mishra and Debashish Chowdhury
-Phys. Rev. E 100, 022106 – Published 6 August 2019](https://doi.org/10.1103/PhysRevE.100.022106)
+Phys. Rev. E 100, 022106 – Published 6 August 2019](https://doi.org/10.1103/PhysRevE.100.022106): because of “leaky” scanning, a fraction of the scanning subunits miss the target site and continue their search beyond the first target. Sometimes such scanners successfully identify the site that marks the site for initiation
+of the synthesis of a different protein. In this paper, we develop an exclusion model with three interconvertible
+species of hard rods to capture some of the key features of these biological phenomena and study the effects of
+the interference of the flow of the different species of rods on the same lattice. More specifically, we identify
+the mean time for the initiation of protein synthesis as appropriate mean first-passage time that we calculate
+analytically using the formalism of backward master equations.
 - Complex recent paper combining model and experiment : [Li, K., Kong, J., Zhang, S. et al. Distance-dependent inhibition of translation initiation by downstream out-of-frame AUGs is consistent with a Brownian ratchet process of ribosome scanning. Genome Biol 23, 254 (2022).](https://doi.org/10.1186/s13059-022-02829-1)
 
 ## Translation initiation mechanism
