@@ -1,6 +1,6 @@
 _This repository gathers resources relevant to the **Computer simulation of a roadblock model of translational control** project_ 
 
-Author: Gabin A. M. ROUSSEAU
+Author: Gabin A. M. Rousseau
 
 Supervisors: Dr Edward Wallace and Dr Ramon Grima
 
