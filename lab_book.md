@@ -113,3 +113,6 @@ For rini v0.3:
 - [ ] Improve the presentation of the phase diagram
 
 ## Day 11 - 29/01
+- Began writing rini v0.3 but work was a bit slow due to illness. Switching to the Gillespie formulaism is requiring some change in the way loops are being organised. I should be able to finish the first implementation tomorrow and get started with the single roadblock as described in the paper of TASEP with defects I found.
+
+## Day 12 - 30/01
