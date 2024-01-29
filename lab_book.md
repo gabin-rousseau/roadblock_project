@@ -99,3 +99,14 @@ Discussed sites for ssd1 binding, from 1 to 5 more or less close to one another 
 
 - Attended Edward's meeting. Discussed what would be useful to present in his meetings. An approach would be to explain what I have done and how I checked how it works for suggestions or biological relevance of the course chosen.
 ## Day 10 - 26/01 
+- Work remotely to make progress on the literature review
+---
+# Week 3 - 29/01 --> 02/02
+- [ ] Finish the literature review.
+
+For rini v0.3:
+- [ ] Integrate the Gillespie algorithm.
+- [ ] Implement a single roadblock in the model.
+- [ ] Improve the presentation of the phase diagram
+
+## Day 11 - 29/01
