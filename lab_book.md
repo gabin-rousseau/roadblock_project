@@ -98,6 +98,9 @@ From that point, 3 numbers are calculated. R is the sum of all propensities. r1 
 Discussed sites for ssd1 binding, from 1 to 5 more or less close to one another or in several groups. We should start with one. The kinetics of the ribosomal helicase might be able to dislodge a roadblock like it disrupts obstacle mRNA secondary structures. Likewise, if blocked for too long, there is the possibility of the ribosome unloading prematurely. Discussed whether a roadblock may only have a chance of blocking the path. The approach should be to assume blocking is guaranteed and instead the wiggle room is more related to the on and off rate of roadblock binding.
 
 - Attended Edward's meeting. Discussed what would be useful to present in his meetings. An approach would be to explain what I have done and how I checked how it works for suggestions or biological relevance of the course chosen.
+
+![Drawings Juraj made to explain how the Gillespie algorithm works](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/gillespie_explanation.jpg)
+
 ## Day 10 - 26/01 
 - Work remotely to make progress on the literature review
 ---
