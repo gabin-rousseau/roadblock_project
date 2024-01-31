@@ -75,3 +75,5 @@ Bayne et al., Nucleic Acids Research, 2022](https://doi.org/10.1093/nar/gkab615)
 
 ## TASEP with defects
 - [Totally asymmetric exclusion process with site-wise dynamic disorder; Warclaw _et. al_; 2019](https://doi.org/10.1088/1751-8121/aafb8a): We propose an extension of the totally asymmetric simple exclusion process (TASEP) in which particles hopping along a lattice can be blocked by obstacles that dynamically attach/detach from lattice sites.
+  
+![Representation of a TASEP with obstacle model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/defectmodel_tasep.jpg)
