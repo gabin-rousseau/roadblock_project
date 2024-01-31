@@ -108,11 +108,15 @@ Discussed sites for ssd1 binding, from 1 to 5 more or less close to one another 
 - [ ] Finish the literature review.
 
 For rini v0.3:
-- [ ] Integrate the Gillespie algorithm.
+- [X] Integrate the Gillespie algorithm.
 - [ ] Implement a single roadblock in the model.
 - [ ] Improve the presentation of the phase diagram
 
 ## Day 11 - 29/01
 - Began writing rini v0.3 but work was a bit slow due to illness. Switching to the Gillespie formulaism is requiring some change in the way loops are being organised. I should be able to finish the first implementation tomorrow and get started with the single roadblock as described in the paper of TASEP with defects I found.
+
+## Day 12 - 30/01
+- Completed the Gillespie integration that defines v0.3. Changed the exit current calculation to the simple ratio of total passed particles against time. The phase diagram is noticeably more consistent with the expectation once steady state is approximated (t=10000). Work to optimise the model may be needed in the future as the runtime will be slower due to the high amount of iterations for the same time frame.
+
 
 ## Day 12 - 30/01
