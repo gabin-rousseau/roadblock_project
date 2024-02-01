@@ -119,6 +119,10 @@ For rini v0.3:
 - Completed the Gillespie integration that defines v0.3. Changed the exit current calculation to the simple ratio of total passed particles against time. The phase diagram is noticeably more consistent with the expectation once steady state is approximated (t=10000). Work to optimise the model may be needed in the future as the runtime will be slower due to the high amount of iterations for the same time frame.
 
 
-## Day 12 - 30/01
+## Day 13 - 31/01
 - Established in markdown the logic behind implementing a roadblock, discussed the variables that introduces and asked important considerations in writing the actual code for the implementation. Prepared a density profile comparison between v0.2 and v0.3 (Goal, implement by Friday).
 - v0.3b will be used for roadblock testing.
+
+## Day 14 - 01/02
+- Discussed the model with Ramon and Edward.
+- Attended Edward's meeting. Edward added some details about what the model intends to stand for, especially that alpha is for the PIC assembly on the mRNA. Brought up that this step seems to be rate-limiting biologically. While I presented figures to compare density profiles over time, Edward asked how fast particles went along the lattice over time, which made me hypothesize SSA is 0.5x as fast as the cellular automaton looking at the difference in maximum initiation rates. This may pose an issue when it comes to comparing directly the models because time has a different significance from one algorithm to another. If I intend to formally make that comparison, I should introduce a time standard when plotting.
