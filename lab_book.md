@@ -124,5 +124,8 @@ For rini v0.3:
 - v0.3b will be used for roadblock testing.
 
 ## Day 14 - 01/02
-- Discussed the model with Ramon and Edward.
+- Discussed the model with Ramon and Edward. Scratched the idea of having blocked sites influence the hopping rate. Blocks are simply another total restriction for progress. For result discussion, we define Pb as the probability of site blocking: Pb = k+ / (k+ + k-), k+: block on-rate, k-: block off-rate. To assess the congestion effect of the roadblock, we can look into plotting the mean site (i) occupancy  (X-bar) across multiple samples (j) at a given point in time (can also look into the variance). Since time intervals themselves are determined stochastically, that will probably involve finding a way to seed the time points.
+ 
+![3rd meeting about rini discussing implementation of the roadblock and plotting of average site occupancy](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_meeting3.jpg)
+
 - Attended Edward's meeting. Edward added some details about what the model intends to stand for, especially that alpha is for the PIC assembly on the mRNA. Brought up that this step seems to be rate-limiting biologically. While I presented figures to compare density profiles over time, Edward asked how fast particles went along the lattice over time, which made me hypothesize SSA is 0.5x as fast as the cellular automaton looking at the difference in maximum initiation rates. This may pose an issue when it comes to comparing directly the models because time has a different significance from one algorithm to another. If I intend to formally make that comparison, I should introduce a time standard when plotting.
