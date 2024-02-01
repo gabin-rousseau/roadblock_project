@@ -120,3 +120,5 @@ For rini v0.3:
 
 
 ## Day 12 - 30/01
+- Established in markdown the logic behind implementing a roadblock, discussed the variables that introduces and asked important considerations in writing the actual code for the implementation. Prepared a density profile comparison between v0.2 and v0.3 (Goal, implement by Friday).
+- v0.3b will be used for roadblock testing.
