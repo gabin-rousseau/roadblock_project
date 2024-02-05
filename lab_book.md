@@ -139,8 +139,9 @@ For rini v0.3:
 
 For rini v0.3:
 - [ ] Implement a single roadblock in the model.
-- [ ] Change the final time point to be exactly the time limit.
+- [X] Change the final time point to be exactly the time limit.
 - [ ] Present a plot of average site occupancy.
 - [ ] Improve the presentation of the phase diagram
 
-## Day 16 05/02
+## Day 16 - 05/02
+
