@@ -129,3 +129,18 @@ For rini v0.3:
 ![3rd meeting about rini discussing implementation of the roadblock and plotting of average site occupancy](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_meeting3.jpg)
 
 - Attended Edward's meeting. Edward added some details about what the model intends to stand for, especially that alpha is for the PIC assembly on the mRNA. Brought up that this step seems to be rate-limiting biologically. While I presented figures to compare density profiles over time, Edward asked how fast particles went along the lattice over time, which made me hypothesize SSA is 0.5x as fast as the cellular automaton looking at the difference in maximum initiation rates. This may pose an issue when it comes to comparing directly the models because time has a different significance from one algorithm to another. If I intend to formally make that comparison, I should introduce a time standard when plotting.
+
+## Day 15 - 02/02
+- Worked remotely to make progress on the literature review.
+
+---
+# Week 4 - 05/02 --> 09/02
+- [ ] Finish the literature review.
+
+For rini v0.3:
+- [ ] Implement a single roadblock in the model.
+- [ ] Change the final time point to be exactly the time limit.
+- [ ] Present a plot of average site occupancy.
+- [ ] Improve the presentation of the phase diagram
+
+## Day 16 05/02
