@@ -138,7 +138,7 @@ For rini v0.3:
 - [ ] Finish the literature review.
 
 For rini v0.3:
-- [ ] Implement a single roadblock in the model.
+- [X] Implement a single roadblock in the model (=make rini v0.4).
 - [X] Change the final time point to be exactly the time limit.
 - [ ] Present a plot of average site occupancy.
 - [X] Improve the presentation of the phase diagram
@@ -151,4 +151,8 @@ For rini v0.3:
 ![Phase diagram of 10 random and unblocked runs of rini v0.3b](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/phase_random10_v03.png)
 
 ## Day 17 - 06/02
+- Succcesfully implemented the roadblock into the model. The sites affected and the length of the roadblock can be additionally customised. The model now assumes the tracking sites to be at the head of particles and roadblocks to simply the exclusion rule for blocking: Si -k_on-> Bi if no particle is present i-l_rb+1 sites downstream and i+l-1 sites upstream AND no block present i-l_rb+1 sites downstream and i+l_rb-1 sites upstream. In other words, this allows the restriction to only depend on the downstream footprint of the prospective block and the respective upstream footprints of eventual particles or blocks present ahead. This is compatible with all previous functions.
+- Discussed the calculation of average occupancies with Ramon (see below). A: the consistency of time points from one run to another is not an issue, as time can be artifically made continuous. If we want to sample a density or occupation state at t=3, when the closest values are only at t=2.5 and 3.5: we can take the value that is still active at 3 i.e., the last that was computed before t=3, so the value from 2.5. B: The goal is to plot average occupancy against sites (i.e. against our 1-dimensional space).
+- Noticed that the restriction rule for blocking is error-prone if the block is located less than l_rb-1 from the entrance of the lattice, placed an extra condition to avoid that sort of error.
 
+![Doodles of the discussion about average site occupancy at a given time point](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/average_occupancy_vs_site_060224.png)
