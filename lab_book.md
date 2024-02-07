@@ -161,7 +161,10 @@ For rini v0.3:
 - Asked Ramon what use there was to sample runs at a timepoint midway through rather than just restricting runtime to the desired time point. The answer seems to be for flexibility mainly.
 - Completed the first function for average occupancy plotting and data extraction rinimo. Takes in the usual rini variables plus the timepoint to be sampled, the number of samples, and two booleans to control plotting and returning the dataset. Plotted with a block on site 20 out of 30, and another time without blocks (B_i=[]).
 - Quickly added the plotting of red segmented lines over the sites that are blockable (if any are specified).
+- Upon seeing the first two plots, Ramon was surprised by the discontinuity of the line and the fact there was seemingly a slight downward trend without blocks. Suggested increasing time and sampling. 5000 seemed to be in the steady state already though (wihout blocks, but should still be at MC, maybe not in HD). Pushed the time to the 10000 limit I have been defaulting and increased sampling from 100 to 1000. The downward skew persists. Defining B_i as an empty list seems to be preserving anomalies in the phase diagram. Further troubleshooting required.
+- Double-checked how I wrote rini to see if there might be a skew between entrance and exit, but both the actions and the conditions should be working as intended. Maybe something to do with the code that involves blocks when B_i is an empty list? Looping through an empty list or a range based off of the list's length should just break the loop instantly, I don't expect any interference from that.
+- Now that I know how to calculate averages at any given time point over multiple runs, I should improve the phase diagram to calculate that kind of average rather than merging every time point of a single run.
 
-![First plot from rinimo showing average occupancy levels across the L30 lattice at t=5000; n=100](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_b20_t5000_0-4.png)
 
-
+![First plot from rinimo showing average occupancy levels across the L30 lattice at t=5000; n=100, B20](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_b20_t5000_0-4.png)
+![Fourth plot from rinimo showing average occupancy levels across the L30 lattice at t=5000; n=1000, no block](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_n1000_noblocks_0-4.png)
