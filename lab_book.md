@@ -156,3 +156,7 @@ For rini v0.3:
 - Noticed that the restriction rule for blocking is error-prone if the block is located less than l_rb-1 from the entrance of the lattice, placed an extra condition to avoid that sort of error. The model seemed to be behaving as expected with the parameters rini(t=10000,l=3,l_rb=2,B_i=[1,8,9,19,25]).
 
 ![Doodles of the discussion about average site occupancy at a given time point](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/average_occupancy_vs_site_060224.png)
+
+## Day 18 - 07/02
+- Asked Ramon what use there was to sample runs at a timepoint midway through rather than just restricting runtime to the desired time point. The answer seems to be for flexibility mainly.
+- 
