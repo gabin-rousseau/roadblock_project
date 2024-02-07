@@ -148,6 +148,8 @@ For rini v0.3:
 - Changed the phase diagram by removing numbered labels and printed sentenced by colour coding points based on which density phase they belong to. Added a second figure plotting observed mean density (between time points of a run) against expected bulk density. Kept the phase colour coding and plotted a red segmented line to spot how far from the expected value results are.
 - Started writing the roadblock in the model: added the relevant variables (block on and off rates, block length and list of blockable indicies). So far, the model creates a subconfiguration for blocks, adds propensities for block-related actions, and updates the dataset for the block configurations. The actions and propensity update conditions are still missing for the model to be functional.
 
+![First plot from rinimo showing average occupancy levels across the L30 lattice at t=5000; n=100](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_b20_t5000_0-4.png)
+
 ![Phase diagram of 10 random and unblocked runs of rini v0.3b](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/phase_random10_v03.png)
 
 ## Day 17 - 06/02
