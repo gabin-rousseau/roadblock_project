@@ -159,4 +159,5 @@ For rini v0.3:
 
 ## Day 18 - 07/02
 - Asked Ramon what use there was to sample runs at a timepoint midway through rather than just restricting runtime to the desired time point. The answer seems to be for flexibility mainly.
-- 
+- Completed the first function for average occupancy plotting and data extraction rinimo. Takes in the usual rini variables plus the timepoint to be sampled, the number of samples, and two booleans to control plotting and returning the dataset.
+- Quickly added the plotting of red segmented lines over the sites that are blockable (if any are specified).
