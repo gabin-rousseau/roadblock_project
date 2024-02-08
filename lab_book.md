@@ -171,7 +171,7 @@ For rini v0.3:
 ## Day 19 - 08/02
 - Juraj thinks the occupancy decrease seems more important than it really is due to size effects (the lattice being short, on the order of 10^1). Two changes that can be made to seek better results: make it so that a = 1 - b (0.25 a and 0.75 b). OR increase lattice size to 100 or 200.
 -  Tested the a = 1 - b with L=30 and n=200, Juraj was correct! The occupancy seems properly distributed throughout.
--  Tried also running the extended t=20000 + L=200, n=200 run but this would take a terrifying amount of time. With two minutes per iteration, we are looking at at least 7 hours of simulation since there is the possibility of certain runs lasting longer.
+-  Tried also running the extended t=20000 + L=200, n=200 run but this would take a terrifying amount of time. With two minutes per iteration, we are looking at about 6 hours and 40 minutes of simulation.
 
 ![Balanced average occupancies when a= 1-b mean the model works!](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_a%3D1-b_0-4.png)
 
