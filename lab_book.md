@@ -165,6 +165,14 @@ For rini v0.3:
 - Double-checked how I wrote rini to see if there might be a skew between entrance and exit, but both the actions and the conditions should be working as intended. Maybe something to do with the code that involves blocks when B_i is an empty list? Looping through an empty list or a range based off of the list's length should just break the loop instantly, I don't expect any interference from that.
 - Now that I know how to calculate averages at any given time point over multiple runs, I should improve the phase diagram to calculate that kind of average rather than merging every time point of a single run.
 
-
 ![First plot from rinimo showing average occupancy levels across the L30 lattice at t=5000; n=100, B20](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_b20_t5000_0-4.png)
 ![Fourth plot from rinimo showing average occupancy levels across the L30 lattice at t=5000; n=1000, no block](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_n1000_noblocks_0-4.png)
+
+## Day 19 - 08/02
+- Juraj thinks the occupancy decrease seems more important than it really is due to size effects (the lattice being short, on the order of 10^1). Two changes that can be made to seek better results: make it so that a = 1 - b (0.25 a and 0.75 b). OR increase lattice size to 100 or 200.
+-  Tested the a = 1 - b with L=30 and n=200, Juraj was correct! The occupancy seems properly distributed throughout.
+-  Tried also running the extended t=20000 + L=200, n=200 run but this would take a terrifying amount of time. With two minutes per iteration, we are looking at at least 7 hours of simulation since there is the possibility of certain runs lasting longer.
+
+![Balanced average occupancies when a= 1-b mean the model works!](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_a%3D1-b_0-4.png)
+
+
