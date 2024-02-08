@@ -172,7 +172,11 @@ For rini v0.3:
 - Juraj thinks the occupancy decrease seems more important than it really is due to size effects (the lattice being short, on the order of 10^1). Two changes that can be made to seek better results: make it so that a = 1 - b (0.25 a and 0.75 b). OR increase lattice size to 100 or 200.
 -  Tested the a = 1 - b with L=30 and n=200, Juraj was correct! The occupancy seems properly distributed throughout.
 -  Tried also running the extended t=20000 + L=200, n=200 run but this would take a terrifying amount of time. With two minutes per iteration, we are looking at about 6 hours and 40 minutes of simulation.
+- **IMPORTANT:** Discussed with Edward and Ramon the progress of the project. The model has proved its functionality, we can now start addressing the use of its parameters to reach a hypothesis on the required initiation dynamics for Ssd1 to produce the results Edward observed. When there are 0 blocks, protein production (exit current) is at a standard value of 1. 1 block site leads to a small 5% decrease, but TWO sites yield a 30% decrease (Edward will share more details next week). One of our end goals would probably be to compare a very simple model where exit current is proportional to blocking probability (to the power of n the number of blocks), to a version of the model that assumes independent binding, and finally with another that assumes COOPERATIVE binding (one way to do this would be to dynamically change k_on around the starting value based on the blocking landscape).
+- For now the next step is to be able to plot a graph that matches Edward's figure (see below).    
 
-![Balanced average occupancies when a= 1-b mean the model works!](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_a%3D1-b_0-4.png)
+![Balanced average occupancies when a = 1-b mean the model works!](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rinimo_a%3D1-b_0-4.png)
+
+![Ssd1 seems to feature a non-linear blocking efficiency as the number of blocking sites increases](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/meeting_080224.png)
 
 
