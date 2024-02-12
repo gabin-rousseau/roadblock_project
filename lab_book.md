@@ -179,4 +179,18 @@ For rini v0.3:
 
 ![Ssd1 seems to feature a non-linear blocking efficiency as the number of blocking sites increases](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/meeting_080224.png)
 
+## Day 20 - 09/02
+-Tried to progress on the literature review, but with little efficiency. Had to take some time off for the theatre production, which required some immediate attention. Put the review at the top of my W5 priorities.
+
+---
+# Week 5 - 12/02 --> 16/02
+- [ ] Absolutely finish the literature review.
+
+For rini v0.4:
+- [ ] Adjust the model's output to plot graphs that match previous Ssd1 data.
+
+## Day 16 - 05/02
+
+
+
 
