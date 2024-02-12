@@ -187,10 +187,14 @@ For rini v0.3:
 - [ ] Absolutely finish the literature review.
 
 For rini v0.4:
-- [ ] Adjust the model's output to plot graphs that match previous Ssd1 data.
+- [X] Adjust the model's output to plot graphs that match previous Ssd1 data.
 
 ## Day 16 - 05/02
+- Attempted to somewhat optimise the core model by resorting to numpy arrays for the configurations, but this quickly led many errors so I decided to put that idea on hold in v0.49. A sensible way to improve the model could be by adding arguments that decide what will be part of the final dataset (assuming the dataset appending is limiting).
+- Made the function rini_INIvBLOCK that plots a standardised exits vs. blockable site count profile. This takes values from n runs displayed as a mean with an sd error bar. With the default L=30, l and l_rb =1, n=10, and t=5000, I found that at Pb=54.8% and blocks=2, we get about 0.7 efficiency like with Edward's results. However, block1 was below 0.8 (see figure)=difference of about 0.1 between b1 and b2. I then proceeded to play with the lattice size, and noticde that more than tripling it (L=100) brought little change to the result. Further increasing particle length to 3 however did lower the distance between b1 and b0, but b1-b2 is about the same. l=6 led to the same observation, although b1-b2 might have been somewhat lowered as well. (the standard deviations do not enable any further interpretation as they seem to get bigger, playing with particle sizes seems to interact with the restriction rules in a way that increases the stochasticity from one run to another?). In a scenario where L=200, l=12 and l=2, the distance b0-b1 is now clearly smaller than b1-b2;b1~3% drop in efficiency, however b1-b2 is too small.
+- After looking at L, l and l_rb, I tried observing what was happening with more than 2 block sites (i.e. up to 5, regularly interspaced blocks). In the initial default scenario with Pb=54.8%, we get again b2~0.7, and the distance between subsequent blocks seems to be halved one block after the other: the more blocks, the lesser the impact of adding another site. In the L=200, l=12 and l_rb=2 scenario, there is also a decrease in impact as blocks are added, but the trend is a bit more inconsistent (adding 3 didn't really change the curve); even then, the maximum efficiency drop does not go below 0.85 with 5 blocks.
 
+ ![First initiation efficiency v. block sites profile where b2=0.7 as expected](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_inivblock_0-4.png)
 
 
 
