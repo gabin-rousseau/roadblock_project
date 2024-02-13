@@ -188,13 +188,36 @@ For rini v0.3:
 
 For rini v0.4:
 - [X] Adjust the model's output to plot graphs that match previous Ssd1 data.
+- [ ] Begin work on 0.5 = make a version that models cooperative binding. Model idea #1: a bound block increases the chance of block binding in its neighbourhood 
 
-## Day 16 - 05/02
+## Day 21 - 12/02
 - Attempted to somewhat optimise the core model by resorting to numpy arrays for the configurations, but this quickly led many errors so I decided to put that idea on hold in v0.49. A sensible way to improve the model could be by adding arguments that decide what will be part of the final dataset (assuming the dataset appending is limiting).
 - Made the function rini_INIvBLOCK that plots a standardised exits vs. blockable site count profile. This takes values from n runs displayed as a mean with an sd error bar. With the default L=30, l and l_rb =1, n=10, and t=5000, I found that at Pb=54.8% and blocks=2, we get about 0.7 efficiency like with Edward's results. However, block1 was below 0.8 (see figure)=difference of about 0.1 between b1 and b2. I then proceeded to play with the lattice size, and noticde that more than tripling it (L=100) brought little change to the result. Further increasing particle length to 3 however did lower the distance between b1 and b0, but b1-b2 is about the same. l=6 led to the same observation, although b1-b2 might have been somewhat lowered as well. (the standard deviations do not enable any further interpretation as they seem to get bigger, playing with particle sizes seems to interact with the restriction rules in a way that increases the stochasticity from one run to another?). In a scenario where L=200, l=12 and l=2, the distance b0-b1 is now clearly smaller than b1-b2;b1~3% drop in efficiency, however b1-b2 is too small.
 - After looking at L, l and l_rb, I tried observing what was happening with more than 2 block sites (i.e. up to 5, regularly interspaced blocks). In the initial default scenario with Pb=54.8%, we get again b2~0.7, and the distance between subsequent blocks seems to be halved one block after the other: the more blocks, the lesser the impact of adding another site. In the L=200, l=12 and l_rb=2 scenario, there is also a decrease in impact as blocks are added, but the trend is a bit more inconsistent (adding 3 didn't really change the curve); even then, the maximum efficiency drop does not go below 0.85 with 5 blocks.
 
  ![First initiation efficiency v. block sites profile where b2=0.7 as expected](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_inivblock_0-4.png)
 
+## Day 22 - 13/02
+- Pb is interesting as it describes the difference from kon and koff, but close these values are to 1 or 0 also matters. Pb may be the same, but the block distribution over time would be different? (high rates: more sporadic and more likely to be blocked by particles, low values= if a block binds, it will stay for longer with no factor controlling its presence except itself). Would need to establish another measurement to characterise this?) Lower absolute values will in general have a higher impact on initiation efficiency  due to this. Probably some time dependence if the values get too close to 0?
+- Continued testing what variations do, but realised that it's hard to trace the results by constantly tweaking things differently. I should set a default standard and record the list of changed variables and how this affects the profile.
+- Looked for potential sources of inspiration in how to define corini (the cooperative blocking version of rini). Added the corresponding bibliography section. No matter what, it seems like changes in propensities in a block's neighbourhood would be a good start.
+
+- __List of rini variables and their effect on the initiation efficiency to blocks profile:__
+_NB: default parameters = t=5000, L=100, l=1, a=0.6, b=0.6, p=1, k_on=0.5, k_off=0.5, l_rb=1, B_i=[49, 74], timepoint=5000, n=10_
+Observables: distance b0b1, distance b1b2.
+    1. t: double time = doesn't seem to make a difference here, sd values are visibly a bit lower 
+    2. L: half length =  b0b1 ~c, **b1b2*2**; double length = 
+    3. l: l=3 = 
+    4. a: a=0.3(LD) = ; a=0.9
+    5. b: b=0.3(HD) = ; b=0.9
+    6. p:NOT TESTED
+    7. k_on & k_off > 0.5:
+    8. k_on & k_off < 0.5: 
+    9. l_rb: l_rb=3 = 
+    10. B_i (number of blocks and successive locations): adding a block at the 25th site didn't change the profile up to b2.The location of the block likely doesn't matter in an independent roadblock model (unless they are so close steric hindrance is possible from one block to another.
+    11. timepoint(sampled time, can be below t): NOT TESTED
+    12. n (run sampling): NOT TESTED
+- Fill the list when possible but testing l_rb =3 made it obvious something is not right with the exclusion rule for scanning (most likely), tied to l_rb. First revise the code to guarantee flexibility for l_rb. Found the issue: problem occurs when l_rb > l, can be fixed easily be rewriting the exclusion rule. Fixed with a token system.
+- Showed Ramon the first look at the efficiency vs block profile. He seems pleased with the method and noted the results are about what he would expect from independent binding. The next step should be to prepare a cooperative version of the TASEP. He noted since we don't really know how the cooperativity is supposed to happen, it would probably be more elegant and simple to let a block binding event affect the probability of the next temporally only.
 
 
