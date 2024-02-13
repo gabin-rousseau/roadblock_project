@@ -77,3 +77,8 @@ Bayne et al., Nucleic Acids Research, 2022](https://doi.org/10.1093/nar/gkab615)
 - [Totally asymmetric exclusion process with site-wise dynamic disorder; Warclaw _et. al_; 2019](https://doi.org/10.1088/1751-8121/aafb8a): We propose an extension of the totally asymmetric simple exclusion process (TASEP) in which particles hopping along a lattice can be blocked by obstacles that dynamically attach/detach from lattice sites.
   
 ![Representation of a TASEP with obstacle model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/defectmodel_tasep.jpg)
+
+## Cooperative RBP binding
+- [Cooperation and competition by RNA-binding proteins in cancer; Nag et al.; 2022](https://doi.org/10.1016/j.semcancer.2022.02.023): Most reported cases of cooperative binding of RBPs to RNA are
+mediated by direct protein-protein interactions [121–124]. However, the role of RNA structure in determining RBP binding to RNA has increasingly come into focus [125,126]. Especially, the flexibility of RNA, and the ability to dynamically shift between multiple metastable conformers, allows RNA structural change to be a major determinant of RBP binding [127]. Therefore, in addition to direct protein-protein in- teractions, cooperative protein binding to mRNAs can also be the result of alterations of RNA secondary structure, where binding of one protein results in an RNA structural switch that makes additional binding sites accessible for RBP binding [128].
+
