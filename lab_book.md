@@ -204,20 +204,23 @@ For rini v0.4:
 
 - __List of rini variables and their effect on the initiation efficiency to blocks profile:__
 _NB: default parameters = t=5000, L=100, l=1, a=0.6, b=0.6, p=1, k_on=0.5, k_off=0.5, l_rb=1, B_i=[49, 74], timepoint=5000, n=10_
-Observables: distance b0b1, distance b1b2.
+Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
     1. t: double time = doesn't seem to make a difference here, sd values are visibly a bit lower 
-    2. L: half length =  b0b1 ~c, **b1b2*2**; double length = 
-    3. l: l=3 = 
-    4. a: a=0.3(LD) = ; a=0.9
-    5. b: b=0.3(HD) = ; b=0.9
+    2. L: half length =  **b1b2*2**; double length = b0b1 - 0.01 
+    3. l: l=3 = **b0b1/3**, b1b2~c
+    4. a: a=0.3(LD) = b1b2=0.01 > b0b1=0.005 BUT the overall effects are noticeably diminished  ; a=0.9 = no changes
+    5. b: b=0.3(HD) = b1b2=b0b1=0.01 ; b=0.9 = no changes
     6. p:NOT TESTED
-    7. k_on & k_off > 0.5:
-    8. k_on & k_off < 0.5: 
-    9. l_rb: l_rb=3 = 
-    10. B_i (number of blocks and successive locations): adding a block at the 25th site didn't change the profile up to b2.The location of the block likely doesn't matter in an independent roadblock model (unless they are so close steric hindrance is possible from one block to another.
-    11. timepoint(sampled time, can be below t): NOT TESTED
-    12. n (run sampling): NOT TESTED
+    7. k_on & k_off: k=0.25(Pb50) = b0b1x1.2 > __b1b2x2__; k=0.75(Pb50) = b0b1x0.8 ; Pb25 = b0b1x0.15 > b1b2x0.3. ; Pb75 = b0b1x3.3 >> b1b2 (about the same if not smaller)
+    8. l_rb: l_rb=3 = b0b1/7, b1b2*0.6
+    9. B_i (number of blocks and successive locations): adding a block at the 25th site didn't change the profile up to b2.The location of the block likely doesn't matter in an independent roadblock model (unless they are so close steric hindrance is possible from one block to another.
+    10. timepoint(sampled time, can be below t): NOT TESTED
+    11. n (run sampling): NOT TESTED
 - Fill the list when possible but testing l_rb =3 made it obvious something is not right with the exclusion rule for scanning (most likely), tied to l_rb. First revise the code to guarantee flexibility for l_rb. Found the issue: problem occurs when l_rb > l, can be fixed easily be rewriting the exclusion rule. Fixed with a token system.
 - Showed Ramon the first look at the efficiency vs block profile. He seems pleased with the method and noted the results are about what he would expect from independent binding. The next step should be to prepare a cooperative version of the TASEP. He noted since we don't really know how the cooperativity is supposed to happen, it would probably be more elegant and simple to let a block binding event affect the probability of the next temporally only.
+
+## Day 23 - 14/02
+- Finished the test runs for the independent model and filled the list above. Went home early to prepare the presentation for Edward's meeting as that is also a preparation for the May seminar.
+- Next week will be dedicated to making a cooperative roadblock algorithm (corini).
 
 
