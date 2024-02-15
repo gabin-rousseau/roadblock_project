@@ -225,9 +225,9 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 
 ## Day 24 - 15/02
 - Discussed my time management of the review. Edward suggested I dedicate whole days to just the literature review to properly sit down and complete the write-up.
-- We are now moving forward with two aspects of the modeling: testing the independent hypothesis, and testing the cooperative hypothesis. Based on my early results, it looks like independent blocking does not satisfy Edward’s observations.
--Independent: adjust the efficiency vs blocks to display normalised flux (passed/time) in boxplots (w/median and interquartiles). Will need to establish a solid range of result comparison between variable changes.
--Coop: code a version where block binding increases binding of the next. Finding one example that match Edward’s data will be sufficient. An important point of discussion will be how we scale the Lattice, particle and defect lengths.
+- We are now moving forward with two aspects of the modeling: testing the independent hypothesis, and testing the cooperative hypothesis. Based on my early results, it looks like independent blocking does not satisfy Edward’s observations. Hypotheses:
+  1. Independent: adjust the efficiency vs blocks to display normalised flux (passed/time) in boxplots (w/median and interquartiles). Will need to establish a solid range of result comparison between variable changes.
+  2. Coop: code a version where block binding increases binding of the next. Finding one example that match Edward’s data will be sufficient. An important point of discussion will be how we scale the Lattice, particle and defect lengths.
 
 - Edward asked me to make a summary figure that exposes the hypotheses we are testing.
 
