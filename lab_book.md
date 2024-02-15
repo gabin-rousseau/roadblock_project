@@ -231,6 +231,8 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 
 - Edward asked me to make a summary figure that exposes the hypotheses we are testing.
 - He also shared his flow cytometry analysis, now I have the exact figures to work with! Normalisation should therefore be made over time and based on the MEDIAN of 0-block.
+- Changed rini_INIvBLOCK to use median standardisation instead of mean and change the plot from point to box (colorblind palette). This helped me compare what the model can currently do vs Edward's results.
+- Edward was happy with the sketch I made, the question now is how to define the cooperative factor: an increase or decrease of k+/k- respectively? Is there a local effect? Is the effect lattice-wide? If local, is the condition for the effect just block presence itself? I will most likely have to test different approaches, but should keep a progression that goes from simple to complex and not try things on a whim.
 
 ![Edward's flow cytometry results](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/edward_flowcytometry_rini.png)
 
