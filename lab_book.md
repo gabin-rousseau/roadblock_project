@@ -220,7 +220,17 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - Showed Ramon the first look at the efficiency vs block profile. He seems pleased with the method and noted the results are about what he would expect from independent binding. The next step should be to prepare a cooperative version of the TASEP. He noted since we don't really know how the cooperativity is supposed to happen, it would probably be more elegant and simple to let a block binding event affect the probability of the next temporally only.
 
 ## Day 23 - 14/02
-- Finished the test runs for the independent model and filled the list above. Went home early to prepare the presentation for Edward's meeting as that is also a preparation for the May seminar.
+- Finished the test runs for the independent model and filled the list above. Went home early to start preparing the seminar practice presentation.
 - Next week will be dedicated to making a cooperative roadblock algorithm (corini).
+
+## Day 24 - 15/02
+- Discussed my time management of the review. Edward suggested I dedicate whole days to just the literature review to properly sit down and complete the write-up.
+- We are now moving forward with two aspects of the modeling: testing the independent hypothesis, and testing the cooperative hypothesis. Based on my early results, it looks like independent blocking does not satisfy Edward’s observations.
+-Independent: adjust the efficiency vs blocks to display normalised flux (passed/time) in boxplots (w/median and interquartiles). Will need to establish a solid range of result comparison between variable changes.
+-Coop: code a version where block binding increases binding of the next. Finding one example that match Edward’s data will be sufficient. An important point of discussion will be how we scale the Lattice, particle and defect lengths.
+
+- Edward asked me to make a summary figure that exposes the hypotheses we are testing.
+
+
 
 
