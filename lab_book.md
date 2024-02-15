@@ -230,6 +230,8 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
   2. Coop: code a version where block binding increases binding of the next. Finding one example that match Edward’s data will be sufficient. An important point of discussion will be how we scale the Lattice, particle and defect lengths.
 
 - Edward asked me to make a summary figure that exposes the hypotheses we are testing.
+- He also shared his flow cytometry analysis, now I have the exact figures to work with! Normalisation should therefore be made over time and based on the MEDIAN of 0-block.
+
 
 
 
