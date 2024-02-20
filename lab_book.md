@@ -248,7 +248,7 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ## Day 26 - 19/02
 - Submitted the literature review.
 
-## Day 27 - 20/20
+## Day 27 - 20/02
 - Adjusted the figure to visualise the distance between successive medians by plotting black segmented lines and printing the corresponding distance (e.g. b0b1) rounded to 2 significant figures.
 - Made the first version corini (v0.6), that takes as new user input coop_p and coop_m, which together determine the strength of the cooperativity by increasing k_on when there are particles already present before binding, or decreasing k_off likewise when bound respectively. Coop_d is a distance factor that allows the user to customize an l_rb dependent area of effect for cooperativity (i.e. if coop_d=1, cooperativity will be effective at sites i +- (l_rb + coop_d) if one other block if found in that neighbourhood.). Cooperativity isn't cumulative: the presence of a single other block in the area of effect will trigger the full effect available, more blocks won't change this.
 - Corini require some time spent on rewriting the restriction rules behind block propensity updates, as I noticed the first draft seemed to working improperly (twice as slow as expected). The issue lied in conditional ranges: when calculating off-rates the central block for which the propensity is calculated was at first counted towards the cooperativity effect, which caused this issue. Now fixed.
@@ -259,7 +259,9 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
   4. test#3 : rinimo 3 blocks (default)
   5. test#5 : INIvBLOCK distant blocks (25, 50, 75)
   6. test#6 : INIvBLOCK neighbour blocks (49,50,51)
+(focus on INIvBLOCK due to time constraints)
 
+## Day 28 - 21/02
 
 
 
