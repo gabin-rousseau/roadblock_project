@@ -242,14 +242,23 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 
 ---
 # Week 6 - 19/02 --> 23/02
-- [ ] Change the figure to a log2 scale to be a perfect match to Edward's format
-- [ ] Prepare corini v0.6 - a cooperative version of the model where roadblock binding increases binding of subsequent blocks. Local effect with a customisable area of effect and effect strength. 
+- [X] Improve the INIvBLOCK figure with median distances.
+- [X] Prepare corini v0.6 - a cooperative version of the model where roadblock binding increases binding of subsequent blocks. Local effect with a customisable area of effect and effect strength. 
 
 ## Day 26 - 19/02
 - Submitted the literature review.
 
 ## Day 27 - 20/20
-- 
+- Adjusted the figure to visualise the distance between successive medians by plotting black segmented lines and printing the corresponding distance (e.g. b0b1) rounded to 2 significant figures.
+- Made the first version corini (v0.6), that takes as new user input coop_p and coop_m, which together determine the strength of the cooperativity by increasing k_on when there are particles already present before binding, or decreasing k_off likewise when bound respectively. Coop_d is a distance factor that allows the user to customize an l_rb dependent area of effect for cooperativity (i.e. if coop_d=1, cooperativity will be effective at sites i +- (l_rb + coop_d) if one other block if found in that neighbourhood.). Cooperativity isn't cumulative: the presence of a single other block in the area of effect will trigger the full effect available, more blocks won't change this.
+- Corini require some time spent on rewriting the restriction rules behind block propensity updates, as I noticed the first draft seemed to working improperly (twice as slow as expected). The issue lied in conditional ranges: when calculating off-rates the central block for which the propensity is calculated was at first counted towards the cooperativity effect, which caused this issue. Now fixed.
+- To test the value of this model against the original independent blocking rini, I started plotting rinimo and INIvsBLOCK plots for certain scenario for both models, varying the number of blocks and their position respectively:
+  1. default parameters:   t=10000, L=100, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5, l_rb=1, B_i=[48, 49, 50],coop_p=0.4, coop_m=0.4, coop_d=1, timepoint=10000
+  2. test#1 : rinimo no blocl
+  3. test#2 : rinimo 1 block (50)
+  4. test#3 : rinimo 3 blocks (default)
+  5. test#5 : INIvBLOCK distant blocks (25, 50, 75)
+  6. test#6 : INIvBLOCK neighbour blocks (49,50,51)
 
 
 
