@@ -254,7 +254,7 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - Corini require some time spent on rewriting the restriction rules behind block propensity updates, as I noticed the first draft seemed to working improperly (twice as slow as expected). The issue lied in conditional ranges: when calculating off-rates the central block for which the propensity is calculated was at first counted towards the cooperativity effect, which caused this issue. Now fixed.
 - To test the value of this model against the original independent blocking rini, I started plotting rinimo and INIvsBLOCK plots for certain scenario for both models, varying the number of blocks and their position respectively:
   1. default parameters:   t=10000, L=100, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5, l_rb=1, B_i=[48, 49, 50],coop_p=0.4, coop_m=0.4, coop_d=1, timepoint=10000
-  2. test#1 : rinimo no blocl
+  2. test#1 : rinimo no block
   3. test#2 : rinimo 1 block (50)
   4. test#3 : rinimo 3 blocks (default)
   5. test#5 : INIvBLOCK distant blocks (25, 50, 75)
