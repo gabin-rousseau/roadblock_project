@@ -184,7 +184,7 @@ For rini v0.3:
 
 ---
 # Week 5 - 12/02 --> 16/02
-- [ ] Absolutely finish the literature review.
+- [X] Absolutely finish the literature review.
 
 For rini v0.4:
 - [X] Adjust the model's output to plot graphs that match previous Ssd1 data.
@@ -236,6 +236,20 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - Finally, Edward made me notice the scale from his figure is on a log2 scale as opposed to mine.
 
 ![Edward's flow cytometry results](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/edward_flowcytometry_rini.png)
+
+## Day 25 - 16/02
+- Worked on the litterature review.
+
+---
+# Week 6 - 19/02 --> 23/02
+- [ ] Change the figure to a log2 scale to be a perfect match to Edward's format
+- [ ] Prepare corini v0.6 - a cooperative version of the model where roadblock binding increases binding of subsequent blocks. Local effect with a customisable area of effect and effect strength. 
+
+## Day 26 - 19/02
+- Submitted the literature review.
+
+## Day 27 - 20/20
+- 
 
 
 
