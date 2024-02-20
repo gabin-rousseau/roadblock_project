@@ -261,6 +261,8 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
   6. test#6 : INIvBLOCK neighbour blocks (49,50,51)
 (focus on INIvBLOCK due to time constraints)
 
+![First comparison between the independent and cooperative v0.6 models, showing plots where the distance between three blocks varies from 25 to 1](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/distance_vs_cooperativity_0-6.png)
+
 ## Day 28 - 21/02
 
 
