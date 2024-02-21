@@ -265,8 +265,17 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 
 ## Day 28 - 21/02
 - After quickly discussing the figure above with Edward, he noted the figure alone wasn't enough for an audience to understand, and that harmonising the y axis would also be important. Introducing this figure and talking over what it means is the end goal of tomorrow's presentation. Cooperativity happens in a fairly simple manner: if a block is in the designated area of effect, cooperativity is active, i.e, a single change to the probability of block binding and unbinding is applied when the conditions are fulfilled. In other words, the model doesn't consider cooperativity as a cumulative phenomenon (doesn't scale with the number of blocks in the area of effect), nor does it scale on the position of other blocks in the area of effect (no decay over the distance). These are things that we can take into account for further testing.
-- **IMPORTANT**: this isn't problematic for now, but checks for cooperativity are error prone if i-(l_rb*coop_d)+1 < 0. I should change the indenting of conditions to prevent errors due to unintended index listing). Made a code fix, to be verified once the figures have finished generating.
+- **IMPORTANT**: this isn't problematic for now, but checks for cooperativity are error prone if i-(l_rb*coop_d)+1 < 0. I should change the indenting of conditions to prevent errors due to unintended index listing). Made a code fix, to be verified once the figures have finished generating. **VERIFIED**
 - To address this, I regenerated figures with the same parameters with homogenised y axes and also made companion rinimo figures to visualise the impact of the blocks on particle occupation throughout the lattice. (about an hour and 40 minutes of wait... I should use less time-consuming parameters (time and lattice length mainly) when testing things other than these variables). Also made a rinimo figure w/o blocks, with one block, and an additional comparison for 2 blocks (rinimo n=50, IvB n=10).
+- I note that in the corinimo close blocks figures, if I increase the area of effect for the same block site distribution, the third might have an even bigger impact as bloc 49 and 51 would also affect one another. Maybe but the distance increase from two is just by an additional 0.05 or so, so quite low. (compared three close blocks of l_rb=1 at coop_d=2). Also, the INIvBLOCK results are very very similar from the main figures showed below despite small, L(20), t(500) values.
+
+![boxplots of roadblocking vs cooperativity](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/distance_vs_cooperativity2.png)
+![rinimos of roadblocking vs cooperativity](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/distance_vs_cooperativity2bis.png)
+
+## Day 29 - 22/02
+
+
+
 
 
 
