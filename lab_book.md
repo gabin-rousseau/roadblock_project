@@ -280,6 +280,22 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
    4. ... I should then use these parameters for post-analysis to see if there are any trends in high scoring parameter sets (e.g. is one variable always inferior to another?)
    5. ... and after isolating high scoring parameter sets, I can also test these on longer lattices or more specific configurations etc.
    6. Another goal (priority pending) would be to **profile** my code and isolate which steps are the most time consuming, before checking if I can optimise.
+- Presented the mid-project talk at Edward's lab meeting, new presentation coming at Ramon's meeting on March 7th. Twice as long as should have been, can be significantly cut down by planning a concise way to talk through the slides at the real seminar.
+- Questions:
+    1. what are my predictions for the mechanism of Ssd1 cooperativity? A way to experiment on it? =Edward suggested we can still formulate the parcimonious hypothesis that Ssd1 units interact directly on contact (floppy N-terminal?), another question could be can they interact before binding RNA or does the cooperativity manifest on the mRNA? Not very keen on testing the cytosolic interactions with this model, since I can only look at the dynamics surrounding the lattice. Ssd1 complexes would mean secondary types of defects that REQUIRE sufficient number of sites (or do they?).
+    2. After explaining what the parameters mean, unnecessary although appreciated by some to detail the default variables: just explain what is being compared. That apparently also confused Edward when I introduced the boxplots.
+    3. What is the typical distance between Ssd1 motifs?
+    4. What happens when I vary block binding/unbinding rates (outside of cooperativity)?
+    5. Were TASEP models originally used by biologists?
+    6. Is Ssd1 found in other organisms beyond cerevisiae? [Is there data from these organisms that could change the way we look at the model?] =S. cerevisiae is the model organism for Ssd1, it's mostly just KNOWN to be used in other fungi.
+    7. Should introduce the TASEP separately from blocking rather than on the same slide.
+    8. When talking about occupation profiles, Edward's recommends a stronger focus on comparing 0, 1, 2 to 3 blocks, otherwise it's harder to interpret these.
+
+![Model doodle](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_explanation_2202.png)
+![Parameter doodle](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/parameter_description_2202.png)
+
+## Day 30 - 23/02
+
 
 
 
