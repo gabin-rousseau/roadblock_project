@@ -273,6 +273,13 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ![rinimos of roadblocking vs cooperativity](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/distance_vs_cooperativity2bis.png)
 
 ## Day 29 - 22/02
+- Very interesting discussion with Ramon and Edward over the lab meeting. Points of action by priority:
+   1. Get some figures out of a maximally corsegrained format (L=5, B_i=[1,2,3], l=1, l_rb=1).
+   2. Write about the cooperativity formalism choice: express the logic as a set of reactions (that would directly count in the Gillespie algorithm) to discuss my use of conditions. (as reactions would be a standard way to do this). Don't necessarily change the code, discuss and put the reaction logic down on paper.
+   3. Work on a parameter space benchmark function for the ?coarsegrained model?. Look up functions to do parallel processing on python (possibly use the lab server or EDI). Make sure parameter sets can be extracted from each time point because...
+   4. ... I should then use these parameters for post-analysis to see if there are any trends in high scoring parameter sets (e.g. is one variable always inferior to another?)
+   5. ... and after isolating high scoring parameter sets, I can also test these on longer lattices or more specific configurations etc.
+   6. Another goal (priority pending) would be to **profile** my code and isolate which steps are the most time consuming, before checking if I can optimise.
 
 
 
