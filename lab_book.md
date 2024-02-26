@@ -294,7 +294,18 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ![Model doodle](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_explanation_2202.png)
 ![Parameter doodle](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/parameter_description_2202.png)
 
-## Day 30 - 23/02
+---
+# Week 7 - 26/02 --> 01/03
+- [X] Make figure observations for the maximally coarsegrained parameter set.
+- [ ] Write the block cooperativity logic down as a reaction system in order to approximately described what the model is currently doing (despit not relying on reactions i.e. separate Gillespie propensities).
+- [ ] Write rini v0.7, with a new function to test parameter sets.
+
+## Day 31 - 26/02
+- Got started with Quarto, which I intend to use for the final report write-up.
+- Made boxplots for the model under the lattice format: (L=5, B_i=[1,2,3], l=1, l_rb=1)
+
+
+
 
 
 
