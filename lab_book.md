@@ -314,6 +314,9 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - Practiced LaTeX mathematical and chemical equation syntax to use on Jupyter, and wrote 4 summary equations to describe blocking/unblocking reactions, including in a cooperativity context. (see figure below)
 ![Summary reactions for the cooperativity model of blocking](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/cooperativity_reactions.png)
 
+- [Using the Pool class from the multiprocessing Python library](https://www.sitepoint.com/python-multiprocessing-parallel-programming/) seems like the most approachable way to permit parallelisation of parameter space computing.
+- 
+
 
 
 
