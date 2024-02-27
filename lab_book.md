@@ -317,6 +317,10 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ![Coarse cooperative tril](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/cooperative_coarse_trial.png)
 
 - IMPORTANT: just a couple of tweaks led to a result that nearly matches Edward's result. The following figure was obtained with the parameters: (**t=10000**, L=5, l=1, a=0.75, b=0.75, p=1, **k_on=0.06**, k_off=0.5, l_rb=1, B_i=[1, 2, 3],coop_p=0.4, coop_m=0.4, coop_d=1, **n=100**)
+- Here, the modeled values of standardised initiation efficiency / protein production are:
+  1. 0 sites: 1.00 (standard)
+  2. 1 site: 0.948 (1.2% difference)
+  3. 2 sites: 0.718 (3.2% difference)
 
 ![first_match: the very first match obtained from the model in comparison with Edward's flow cytometry data](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/first_match.png)
 
