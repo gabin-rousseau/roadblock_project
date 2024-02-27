@@ -235,6 +235,7 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - Edward was happy with the sketch I made, the question now is how to define the cooperative factor: an increase or decrease of k+/k- respectively? Is there a local effect? Is the effect lattice-wide? If local, is the condition for the effect just block presence itself? I will most likely have to test different approaches, but should keep a progression that goes from simple to complex and not try things on a whim.
 - Finally, Edward made me notice the scale from his figure is on a log2 scale as opposed to mine.
 
+[Link to the html cytometry result file preview](https://htmlpreview.github.io/?https://github.com/gabin-rousseau/ReporterFlow2021/blob/main/Rmd/FlowAnalysis_2021-12-14.html)
 ![Edward's flow cytometry results](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/edward_flowcytometry_rini.png)
 
 ## Day 25 - 16/02
@@ -291,9 +292,12 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
     7. Should introduce the TASEP separately from blocking rather than on the same slide.
     8. When talking about occupation profiles, Edward's recommends a stronger focus on comparing 0, 1, 2 to 3 blocks, otherwise it's harder to interpret these.
 
+
 ![Model doodle](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/TASEP_explanation_2202.png)
 ![Parameter doodle](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/parameter_description_2202.png)
 
+- Edward's comments on Ssd1 distribution data in 5'UTRs: the section "Plot pileup on SUN4 5’UTR to show reproducibility" Shows that there is a roadblock motif at position 150 and 180, roughly. By contrast, UTH1 has roadblock motifs at roughly positions 30, 95, 125, 160, 190 (estimated by eye). And so on. So we'll have to discuss what level of coarse-grained/detail to model these at.
+[Link to Edward's Ssd1 site spacing data in native UTRs](https://htmlpreview.github.io/?https://github.com/ewallace/Ssd1_CRACanalysis_2020/blob/v2.1/rmarkdown/pileup_Ssd1_closeup.html)
 ---
 # Week 7 - 26/02 --> 01/03
 - [X] Make figure observations for the maximally coarsegrained parameter set.
