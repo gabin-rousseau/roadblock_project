@@ -235,7 +235,13 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - Edward was happy with the sketch I made, the question now is how to define the cooperative factor: an increase or decrease of k+/k- respectively? Is there a local effect? Is the effect lattice-wide? If local, is the condition for the effect just block presence itself? I will most likely have to test different approaches, but should keep a progression that goes from simple to complex and not try things on a whim.
 - Finally, Edward made me notice the scale from his figure is on a log2 scale as opposed to mine.
 
+- Based on Edward's cytometry data, the precise experimental values on standardised protein production efficiency are:
+   1. 0 sites: 1.01
+   2. 1 site: 0.959
+   3. 2 sites: 0.741
+  
 [Link to the html cytometry result file preview](https://htmlpreview.github.io/?https://github.com/gabin-rousseau/ReporterFlow2021/blob/main/Rmd/FlowAnalysis_2021-12-14.html)
+
 ![Edward's flow cytometry results](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/edward_flowcytometry_rini.png)
 
 ## Day 25 - 16/02
