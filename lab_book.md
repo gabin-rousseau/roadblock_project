@@ -304,7 +304,7 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - Got started with Quarto, which I intend to use for the final report write-up.
 - Made boxplots for the model under the lattice format: (L=5, B_i=[1,2,3], l=1, l_rb=1), it looks like the initiation efficiency effects mostly remain consistent in the coarse format, should be useable in the parameter space test!
 ![Coarse independent trial](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/independent_coarse_trial.png)
-1[Coarse cooperative tril](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/cooperative_coarse_trial.png)
+![Coarse cooperative tril](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/cooperative_coarse_trial.png)
 
 
 
