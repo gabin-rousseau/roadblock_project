@@ -329,7 +329,13 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ![Summary reactions for the cooperativity model of blocking](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/cooperativity_reactions.png)
 
 - [Using the Pool class from the multiprocessing Python library](https://www.sitepoint.com/python-multiprocessing-parallel-programming/) seems like the most approachable way to permit parallelisation of parameter space computing.
-- 
+- Parameter space function concept (2 variants rini_paramspace and corini_paramspace):
+  1. Input: t=1000, L=5, l=1, p=1, l_rb=1, B_i=[1,2,3], n, visual=False, dataset=True // specify the default parameters that won't be randomised i.e. time and lattice settings, n as the number of parameter sets to run through, visual dictates whether a plot of the output is to be generated, dataset dictates whether the output is returned.
+  2. Contents: the function should generate a list of rini_INIvBLOCK argument tuples of length n where the rates a, b, k_on, k_off and coop parameters are randomised in a way fitting the parameters' boundaries (rates vary from 0 to 1 uniformly, coop_d varies between 1 and 2?). This can be passed onto a multiprocesses Pool class object as a starmap, allowing for parallel processing of the runs required. The pool processing would return a list of results which can be used to finalise the output.
+  3. Output: a dataset showing for each parameter set: its ID, all of the parameters, a score of similarity to experimental data S: the mean of the individual similarity scores s1 and s2 1-|1-(model/experimental)| for the 1 site and 2 site values: the closer the score is to 1, the better the model result.
+  4. CONSIDERATIONS:  coop_p/m will be a problem as in a randomised scenario this may cause nonsensical on and off rates for the blocks (e.g. negative off values): should place a limiter condition. Score calculation should rely on median standardised values of initiation efficiency from rini_INIvBLOCK, an extra argument should be added to that function in order to let it output just these two values (1s median and 2s median) for ease of interpretation.
+ 
+- Added in corini a coop parameter limiting step to make sure intended boundaries are respected. Added the comparison_output argument to INIvBLOCK that leads to returning the 1s and 2s medians as a tuple. This can be used in the starmap.
 
 
 
