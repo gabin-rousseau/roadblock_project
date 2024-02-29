@@ -337,6 +337,14 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
  
 - Added in corini a coop parameter limiting step to make sure intended boundaries are respected. Added the comparison_output argument to INIvBLOCK that leads to returning the 1s and 2s medians as a tuple. This can be used in the starmap.
 
+## Day 33 - 28/02
+- Completed the first version of the parameter space function. I discovered by working from home that multiprocessing worked really badly on windows couple with jupyter unless the working function used in parallel is imported. Made a rinipy.py file to easily import rini, corini and their respective INIvBLOCK functions (rin or cib).
+- The following two figures were obtained with the parameters t=500, L=5, l=1, p=1, l_rb=1, B_i=[1,2,3], n=50, n_ivb=10, visual=False, dataset=True:
+![First parameter space of the independent model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_space1.png)
+![First parameter space of the cooperative model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/corini_space1.png)
+
+
+
 
 
 
