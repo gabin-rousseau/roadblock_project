@@ -352,6 +352,8 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
    5. Produce some boxplots to visualise the results in parameter sets of interest, add lines to show experimental medians as well.
 - The strength of the model is it provides parameters that should make sense experimentally, and while we lack experimental data, we are in a good place to produce interesting predictions about what parameters can be best associated with existing results, as well as predict what other block sites (e.g. a third) would lead to under certain assumptions (i.e. cooperation vs. independence).
 
+- The independent model yielded surprisingly high scoring parameters, although I noticed there seemed to be a limit around the 90-95% similarity mark that the cooperative model isn't affected by. I also noticed some points produced a division by zero error due to standardisation using 0 as the denominator (median of absolutely 0 succesful exits), while other outliers lied in the negative range (either the model median is negative or way higher than expected), which is part of the reason why I should just simplify my measurements. Likewise many points in the cooperative model fall to zero because of cooperative effects (namely coop_m). With these obvious outliers, Ramon noted it is also possible that some points that look fine may also contain parameter values that are biologically nonsensical. As a result, **I should probably be careful with how many parameters I vary at once and over which ranges I allow them to be varied: start wide, but then hone in on better values.**
+
 
 
 
