@@ -343,6 +343,14 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ![First parameter space of the independent model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/rini_space1.png)
 ![First parameter space of the cooperative model](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/corini_space1.png)
 
+## Day 34 - 29/02
+- Discussed the results with Edward and Ramon. Action points:
+   1. Change the formalism of the cooperative model to make cooperative block dynamics the result of separate Gillespie actions as described in the reactions I drafted this week.
+   2. Make sure the scale of each axis are the same (1:1 instead of 1:2)
+   3. Reformulate the scores we're interested in: s1 and s2 should just be the absolute errors model-experiment, and S the rms sqrt((s1^2 + s2^2)/2). Suggested to simplify the plot by only looking at the variations for one variable at a time so that I can plot S over the variations of these parameters. Maybe highlight the best 5 points. Two other significant plots would be to show for 1s and 2s respectively the model median vs experimental median.
+   4. Send figure drafts/sketches to Edward/Ramon before next Thursday to ensure I am working with the right ideas.
+   5. Produce some boxplots to visualise the results in parameter sets of interest, add lines to show experimental medians as well.
+- The strength of the model is it provides parameters that should make sense experimentally, and while we lack experimental data, we are in a good place to produce interesting predictions about what parameters can be best associated with existing results, as well as predict what other block sites (e.g. a third) would lead to under certain assumptions (i.e. cooperation vs. independence).
 
 
 
