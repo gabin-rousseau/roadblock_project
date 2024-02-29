@@ -2,7 +2,6 @@
 import matplotlib.pyplot as plt
 
 import numpy as np
-import random
 
 
 import seaborn as sns
@@ -551,7 +550,7 @@ def rini_INIvBLOCK(t=10000, L=100, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5
     #Launch n runs and calculate standardised mean exits
     exits_zero=[] #tally exits for zero blocks to establish a median standard
     #loop for as many repetitions as required
-    for i in tqdm(range(n)):
+    for i in range(n):
         #record exit flux for each block scenario
         for ii in range(blockcount):
             
@@ -566,7 +565,11 @@ def rini_INIvBLOCK(t=10000, L=100, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5
             if ii == 0:
                 exits_zero.append(current_exits)
     median_exits_zero=statistics.median(exits_zero)        
-    standardised_exits=[x/median_exits_zero for x in exits]   
+    if median_exits_zero!= 0: #prevent division by zero
+        standardised_exits=[x/median_exits_zero for x in exits]   
+    else:
+        standardised_exits=[x*0 for x in exits]
+        print('A division by zero was avoided, standard efficiency = 0 in a point.')   
     
     rini_INIvBLOCK_data=pd.DataFrame(list(zip(repetition, blocks, standardised_exits)), columns = ['repetition_number', 'block_number','initiation'])
     
@@ -621,7 +624,7 @@ def corini_INIvBLOCK(t=10000, L=100, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0
     #Launch n runs and calculate standardised mean exits
     exits_zero=[] #tally exits for zero blocks to establish a median standard
     #loop for as many repetitions as required
-    for i in tqdm(range(n)):
+    for i in range(n):
         #record exit flux for each block scenario
         for ii in range(blockcount):
             
@@ -636,7 +639,11 @@ def corini_INIvBLOCK(t=10000, L=100, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0
             if ii == 0:
                 exits_zero.append(current_exits)
     median_exits_zero=statistics.median(exits_zero)        
-    standardised_exits=[x/median_exits_zero for x in exits]   
+    if median_exits_zero!= 0: #prevent division by zero
+        standardised_exits=[x/median_exits_zero for x in exits]   
+    else:
+        standardised_exits=[x*0 for x in exits]
+        print('A division by zero was avoided, standard efficiency = 0 in a point.')  
     
     rini_INIvBLOCK_data=pd.DataFrame(list(zip(repetition, blocks, standardised_exits)), columns = ['repetition_number', 'block_number','initiation'])
     
