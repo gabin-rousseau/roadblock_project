@@ -357,13 +357,21 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ---
 # Week 8 - 04/03 --> 08/03
 - [ ] Update the cooperative formalism to an extra set of Gillespie propensities in rini v0.8.
-- [X] Make the parameter space figure scaling 111 instead of 121.
+- [X] Make the parameter space figure scaling 131 instead of 121.
 - [X] Make s1 and s2 absolute errors, S the rms of s1 and s2.
-- [ ] Make a concept set of plots showing S vs k_on alongside 1s and 2s model vs expected median values. Send to Ramon and Edward for feedback.
+- [X] Make a concept set of plots showing S vs k_on alongside 1s and 2s model vs expected median values. Send to Ramon and Edward for feedback.
 - [ ] Highlight the top 5 points in the S plot.
 
 ## Day 38 - 06/03
-- 
+- Changed the paramspace function to allow for an easier selection of parameters to randomise (set desired randomisables to None by default and give a proper default value to the rest). Because of the increased amount of input though, the function takes about 50% longer than before (still about 0.1 it./s). Turned s1 and s2 into absolute errors, S is now the rms of s1 and s2.
+- Generated the three concept figures with 1000-fold k_on randomisation (boundaries: 0 to 1) with the default parameters: t=500, L=5, l=1, p=1, l_rb=1, B_i=[1,2,3], n=10, n_ivb=10, visual=False, dataset=True, a=0.75,b=0.75, k_on=None, k_off=0.5,coop_p=0.4,coop_m=0.4,coop_d=1
+- Also plotted boxplots for the  best parameter sets that appeared in the figures below, but this would be more interesting once I have rewritten cooperation.
+
+![indespace1](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/indespace1_kon.png)
+![coopspace1](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/coopspace1_kon.png)
+
+
+
 
 
 
