@@ -370,6 +370,8 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ![indespace1](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/indespace1_kon.png)
 ![coopspace1](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/coopspace1_kon.png)
 
+- I'm quite confident I properly adapted the code to have cooperative block dynamics as separate reactions but I want to revisit the meaning of having them be compatible with base blocking propensities. Taking the example of cooperative unbinding two propensities (k_on,k_on-coop_m) could lead to the same result, but doesn't that defeat the purpose of the effect? I asked Ramon about it, comparing this to having the block being able to unbind on its own in addition to being rarely knocked off by some other particle, whereas the idea is a particles together can't unbind as easily.
+
 
 
 
