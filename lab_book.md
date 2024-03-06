@@ -307,8 +307,8 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ---
 # Week 7 - 26/02 --> 01/03
 - [X] Make figure observations for the maximally coarsegrained parameter set.
-- [ ] Write the block cooperativity logic down as a reaction system in order to approximately described what the model is currently doing (despit not relying on reactions i.e. separate Gillespie propensities).
-- [ ] Write rini v0.7, with a new function to test parameter sets.
+- [X] Write the block cooperativity logic down as a reaction system in order to approximately described what the model is currently doing (despit not relying on reactions i.e. separate Gillespie propensities).
+- [X] Write rini v0.7, with a new function to test parameter sets.
 
 ## Day 31 - 26/02
 - Got started with Quarto, which I intend to use for the final report write-up.
@@ -353,6 +353,17 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - The strength of the model is it provides parameters that should make sense experimentally, and while we lack experimental data, we are in a good place to produce interesting predictions about what parameters can be best associated with existing results, as well as predict what other block sites (e.g. a third) would lead to under certain assumptions (i.e. cooperation vs. independence).
 
 - The independent model yielded surprisingly high scoring parameters, although I noticed there seemed to be a limit around the 90-95% similarity mark that the cooperative model isn't affected by. I also noticed some points produced a division by zero error due to standardisation using 0 as the denominator (median of absolutely 0 succesful exits), while other outliers lied in the negative range (either the model median is negative or way higher than expected), which is part of the reason why I should just simplify my measurements. Likewise many points in the cooperative model fall to zero because of cooperative effects (namely coop_m). With these obvious outliers, Ramon noted it is also possible that some points that look fine may also contain parameter values that are biologically nonsensical. As a result, **I should probably be careful with how many parameters I vary at once and over which ranges I allow them to be varied: start wide, but then hone in on better values.**
+
+---
+# Week 8 - 04/03 --> 08/03
+- [ ] Update the cooperative formalism to an extra set of Gillespie propensities in rini v0.8.
+- [X] Make the parameter space figure scaling 111 instead of 121.
+- [X] Make s1 and s2 absolute errors, S the rms of s1 and s2.
+- [ ] Make a concept set of plots showing S vs k_on alongside 1s and 2s model vs expected median values. Send to Ramon and Edward for feedback.
+- [ ] Highlight the top 5 points in the S plot.
+
+## Day 38 - 06/03
+- 
 
 
 
