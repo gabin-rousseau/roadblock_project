@@ -376,7 +376,8 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - distinguished the function above (formerly plot_paramscore, now paramsolo) that is better suited to assess randomisation of just one parameter with a second one, plot_paramulti, that plots s2 vs s1.
 - Presented the mid-project slides at Ramon's meeting. Ramon brought up that the rates (k-- and k--) were confusing on the TASEP slide, and recommended elaborating further on the model. Maybe introduce the main concept of the model, then talk about the Gillespie algorithm ("We have a set of possible actions at any given time, a particle entering, a particle moving... and you throw two dice! One to tell which action will happen, the other to determined how long it will take until the next action happens (the range of possible values for this time interval depend on how many actions are possible and how likely they each are to happen, just like the first die). Ramon didn't catch on to the fact that I used the coarsegrained model despite the sketch I added. Ramon noted the behaviour of the cooperative model looked weird at 3 blocks because the effect was closer to the addition of the first block. The answer is that the effect isn't cumulative which translates poorly in further addition of block sites. We don't enough data to really inform the format any further but that would typically be the approach; I added that it would be simple to express that in my model and it that it will probably become something worth considering as an alternative when data for more than two sites is in.
 
-!
+![indespace1b](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/indespace1b_kon.png)
+![coopspace1b](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/coopspace1b_kon.png)
 
 
 
