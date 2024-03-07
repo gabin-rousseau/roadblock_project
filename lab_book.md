@@ -379,8 +379,16 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 ![indespace1b](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/indespace1b_kon.png)
 ![coopspace1b](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/coopspace1b_kon.png)
 
+- Met with Ramon about the project. Discussed the way I deal with the independent and cooperative reactions, the figures I generated for the parameter space and what I can do to make progress on the parameter space thanks to realistic boundaries for the parameters varied.
+    1. **Gillespie reactions**: Ramon agrees that they should be incompatible to simplify interpretation.
+    2. **Figures**: Ramon prefers the s2 vs s1 figure for a multi-purpose use.
+    3. To generate points that have a chance of making sense relative to the biology, it is now time to think about setting boundaries for the rates. First comes assessing what model time means in real time: as p=1, I rely on maximal ribosome scanning speed in nt/s vs the model speed to get a conversion scale (careful, might be a difference in speed from elongating to scanning, the value in the book that Ramon lent me, _CELL BIOLOGY by the numbers_ by Ron Milo _et al._, is for elongating ribosomes). Following that, I should read about initiation rate and protein production to get estimates for alpha and beta. If possible, I should also reason about block rates and cooperativity effect; for instance, Ramon said that since the dogma is that initiative binding is the rate-limiting step, the effective binding probability of the block shouldn't get too high (say 30%).
 
+- First lead at page 232 of the book:
 
+- Careful note: the S. cerevisiae value was obtained at 30C, as opposed to 37C in E. coli (expected to be faster under the same temperature, look up Q10). In mice, the speed seems to be 6 aa/s = ~20nt/s.
+
+![page232](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/page232.jpg)
 
 
 
