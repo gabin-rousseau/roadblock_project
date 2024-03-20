@@ -396,9 +396,13 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 
 ---
 # Week 10 - 18/03 --> 22/03
-- [ ]  Fix again corini so that the separate base/cooperative Gillespie actions are exclusive to one another: one's propensity is up if the other's condition isn't validated, basically.
+- [X]  Fix again corini so that the separate base/cooperative Gillespie actions are exclusive to one another: one's propensity is up if the other's condition isn't validated, basically.
 - [ ]  Establish a conversion standard between real time and model time based on the real-life equivalent of p.
 - [ ]  Draft a boundary idea for all rate variables grounded in known data such as page 232.
+
+## Day 40 
+- Succesfully updated the corini formalism so that cooperation is considered as separate reactions, while preserving exclusivity (if cooperative blocking is possible, independent is no longer considered for as long as cooperation remains possible at that site.) When it comes to blocking/unblocking, the propensity for an executed action is set to zero immediately while updating the propensity of one reaction to above 0 nullifies that of the opposite reaction in terms of cooperativity (e.g. cooperative unbinding selected means erasure of independent unbinding until the cooperative conditions are no longer fulfilled).
+-   
 
 ---
 # Week 11 - 25/03 --> 29/03
