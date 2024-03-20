@@ -390,6 +390,37 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 
 ![page232](https://github.com/gabin-rousseau/roadblock_project/blob/main/images/page232.jpg)
 
+---
+# Week 9 - 11/03 --> 15/03
+### On hiatus while the theatre show  I produced unfolds.
+
+---
+# Week 10 - 18/03 --> 22/03
+- [ ]  Fix again corini so that the separate base/cooperative Gillespie actions are exclusive to one another: one's propensity is up if the other's condition isn't validated, basically.
+- [ ]  Establish a conversion standard between real time and model time based on the real-life equivalent of p.
+- [ ]  Draft a boundary idea for all rate variables grounded in known data such as page 232.
+
+---
+# Week 11 - 25/03 --> 29/03
+- [ ] 
+
+---
+# Week 12 - 01/04 --> 05/04
+- [ ] 
+
+---
+# SPRING BREAK - 08/04 --> 19/04
+- [ ] Prepare the first report draft for review by Edward and Ramon.
+ 
+---
+# Week 13 - 22/04 --> 26/04
+- [ ] 
+
+---
+# Week 14 - 29/04 --> 03/05
+- [ ] 
+
+# END OF PROJECT
 
 
 
