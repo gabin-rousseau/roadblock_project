@@ -405,7 +405,7 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - Found 2 papers that are relevant to time comparison:
   1. [Dynamics and processivity of 40S ribosome scanning on mRNA in yeast; Berthelot et al.; 2003](https://doi.org/10.1046/j.1365-2958.2003.03898.x): suggests an average scanning rate in yeast of 10nt/s at 26C. (recommended by Edward).
   2. [Computational resources and strategies to assess single-molecule dynamics of the translation process in S. cerevisiae; Magalhaes et al.; 2019](https://doi.org/10.1093/bib/bbz149): only looks at general initiation rate but also highlights its relationship with elongation, which might help with defining boundaries.
-  3. [Unidirectional constant rate motion of the ribosomal scanning particle during eukaryotic translation initiation; Vassilenko et al.; 2011](https://doi.org/10.1093/nar/gkr147):"The scanning rate is of the same order of magnitude as the movement rate of translating ribosome."
+  3. [Unidirectional constant rate motion of the ribosomal scanning particle during eukaryotic translation initiation; Vassilenko et al.; 2011](https://doi.org/10.1093/nar/gkr147):"The scanning rate is of the same order of magnitude as the movement rate of translating ribosome." / Also notes that ribosome migration is unidirectional and is basically independent of the sequence itself or its secondary structure.
   
 ## Day 41 - 21/03
 
