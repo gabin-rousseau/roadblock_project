@@ -400,12 +400,14 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - [ ]  Establish a conversion standard between real time and model time based on the real-life equivalent of p.
 - [ ]  Draft a boundary idea for all rate variables grounded in known data such as page 232.
 
-## Day 40 
+## Day 40 - 20/03
 - Succesfully updated the corini formalism so that cooperation is considered as separate reactions, while preserving exclusivity (if cooperative blocking is possible, independent is no longer considered for as long as cooperation remains possible at that site.) When it comes to blocking/unblocking, the propensity for an executed action is set to zero immediately while updating the propensity of one reaction to above 0 nullifies that of the opposite reaction in terms of cooperativity (e.g. cooperative unbinding selected means erasure of independent unbinding until the cooperative conditions are no longer fulfilled).
 - Found 2 papers that are relevant to time comparison:
   1. [Dynamics and processivity of 40S ribosome scanning on mRNA in yeast; Berthelot et al.; 2003](https://doi.org/10.1046/j.1365-2958.2003.03898.x): suggests an average scanning rate in yeast of 10nt/s at 26C. (recommended by Edward).
   2. [Computational resources and strategies to assess single-molecule dynamics of the translation process in S. cerevisiae; Magalhaes et al.; 2019](https://doi.org/10.1093/bib/bbz149): only looks at general initiation rate but also highlights its relationship with elongation, which might help with defining boundaries.
+  3. [Unidirectional constant rate motion of the ribosomal scanning particle during eukaryotic translation initiation; Vassilenko et al.; 2011](https://doi.org/10.1093/nar/gkr147):"The scanning rate is of the same order of magnitude as the movement rate of translating ribosome."
   
+## Day 41 - 21/03
 
 ---
 # Week 11 - 25/03 --> 29/03
