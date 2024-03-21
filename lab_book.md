@@ -408,10 +408,16 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
   3. [Unidirectional constant rate motion of the ribosomal scanning particle during eukaryotic translation initiation; Vassilenko et al.; 2011](https://doi.org/10.1093/nar/gkr147):"The scanning rate is of the same order of magnitude as the movement rate of translating ribosome." / Also notes that ribosome migration is unidirectional and is basically independent of the sequence itself or its secondary structure.
   
 ## Day 41 - 21/03
-- Discussed the project with Edward and Ramon: Edward noted the key question surrounding initiation scanning eluded the review and that it should be in the focus for the report (what's known about it, what isn't and why does that lead us to this project.)
+- Discussed the project with Edward and Ramon: Edward noted the key question surrounding initiation scanning eluded the review and that it should be in the focus for the report (what's known about it, what isn't and why does that lead us to this project.) A major part of the report composition effort will go into putting together the story I want to tell about the project and the figures I will present to illustrate that story,
   1. april 10th: submit a report outline
   2. april 21st: submit the first report draft
-  3. 
+  3. Figures and Jupyter notebook: it was hard for both Edward and me to catch up on my work (understanding the notebook generally through the introductory markdown cell and the parameter space figure's meaning. **I should write concisely and clearly about the parameter space function as I would a paragraph of the results section. Then, update my notebook annotations as the well as the introductory markdown.**
+  4. Establish the model's real time scale to benchmark reasonable parameter values or ranges when randomised.
+ 
+- Edward noted a quote from his supervisor: "One paper, one idea.", in which case more complex details are just there to enrich the idea. MY idea would probably be tied to a figure showcasing the experimental medians vs best results from the independent model and cooperative model.
+- He also recommended to just plot raw errors, the sign retains some information about the relationship between model and experiment: are we overshooting or undershooting? After all, the best independent run should be undershooting the exp 1s result and overshooting the exp 2s result, for a miminal rms.
+
+- Ate ice-cream. <3
 ---
 # Week 11 - 25/03 --> 29/03
 - [ ] 
