@@ -301,6 +301,8 @@ def corini(t=100, L=30, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5, l_rb=1, B
     for i in B_i:
         A.append(k_on)
         A.append(0) #k_off position
+        A.append(0) #k_on coop
+        A.append(0) #k_off coop
     
     #coop parameter limiting
     if k_on+coop_p>1: #coop_p is too high, set it to the allowed maximum
@@ -369,18 +371,25 @@ def corini(t=100, L=30, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5, l_rb=1, B
                 elif i>L-1:
                     i-=L
                     #blocking
-                    if (i%2)==0:
-                        blocked=B_i[int(i/2)]
+                    if (i%4)==0:
+                        blocked=B_i[int(i/4)]
                         B[blocked]+=1
                         A[i+L]=0
-                    
-                    
                     #unblocking
-                    else:
-                        unblocked=B_i[int((i-1)/2)]
+                    elif ((i-1)%4)==0:
+                        unblocked=B_i[int((i-1)/4)]
                         B[unblocked]-=1
                         A[i+L]=0
-    
+                    #coop blocking
+                    elif ((i-2)%4)==0:
+                        blocked=B_i[int((i-2)/4)]
+                        B[blocked]+=1
+                        A[i+L]=0
+                    #coop unblocking
+                    elif ((i-3)%4)==0:
+                        unblocked=B_i[int((i-3)/4)]
+                        B[unblocked]-=1
+                        A[i+L]=0
                 else:
                     print(f'An unexpected error happened at time {time}, please check the code because i={i}, A[i]={A[i]} and R={R}.')
 
@@ -436,39 +445,51 @@ def corini(t=100, L=30, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5, l_rb=1, B
                             #COOP-ON EFFECT?
                             if block_i-(l_rb*coop_d) < 0: #this first condition prevents unintended indexing at negative values when calculating cooperativity distance
                                 if 1 in B[0:block_i-l_rb+1] or 1 in B[block_i+l_rb:block_i+1+(l_rb*coop_d)]:
-                                    A[L+(block_ii*2)]=k_on+coop_p
+                                    A[L+(block_ii*4)+2]=k_on+coop_p
+                                    A[L+(block_ii*4)]=0
                                 else:
-                                    A[L+(block_ii*2)]=k_on
+                                    A[L+(block_ii*4)]=k_on
+                                    A[L+(block_ii*4)+2]=0
                             elif 1 in B[block_i-(l_rb*coop_d):block_i-l_rb+1] or 1 in B[block_i+l_rb:block_i+1+(l_rb*coop_d)]:
-                                A[L+(block_ii*2)]=k_on+coop_p
+                                A[L+(block_ii*4)+2]=k_on+coop_p
+                                A[L+(block_ii*4)]=0
                             else:
-                                A[L+(block_ii*2)]=k_on
+                                A[L+(block_ii*4)]=k_on
+                                A[L+(block_ii*4)+2]=0
                         elif B[block_i]==1:
                             #COOP-OFF EFFECT?
                             if block_i-(l_rb*coop_d) < 0:
                                 if 1 in B[0:block_i-l_rb+1] or 1 in B[block_i+l_rb:block_i+1+(l_rb*coop_d)]:
-                                    A[L+(block_ii*2)+1]=k_off-coop_m
+                                    A[L+(block_ii*4)+3]=k_off-coop_m
+                                    A[L+(block_ii*4)+1]=0
                                 else:
-                                    A[L+(block_ii*2)+1]=k_off
+                                    A[L+(block_ii*4)+1]=k_off
+                                    A[L+(block_ii*4)+3]=0
                             
                             elif 1 in B[block_i-(l_rb*coop_d):block_i-l_rb+1] or 1 in B[block_i+l_rb:block_i+1+(l_rb*coop_d)]:
-                                A[L+(block_ii*2)+1]=k_off-coop_m
+                                A[L+(block_ii*4)+3]=k_off-coop_m
+                                A[L+(block_ii*4)+1]=0
                             else:
-                                A[L+(block_ii*2)+1]=k_off
+                                A[L+(block_ii*4)+1]=k_off
+                                A[L+(block_ii*4)+3]=0
                                 
                     else:
                         if 1 not in C[0:block_i+l] and 1 not in B[0:block_i+l_rb]:
                             #COOP-ON EFFECT?
                             if 1 in B[block_i+l_rb:block_i+1+(l_rb*coop_d)]:
-                                A[L+(block_ii*2)]=k_on+coop_p
+                                A[L+(block_ii*4)+2]=k_on+coop_p
+                                A[L+(block_ii*4)]=0
                             else:
-                                A[L+(block_ii*2)]=k_on
+                                A[L+(block_ii*4)]=k_on
+                                A[L+(block_ii*4)+2]=0
                         elif B[block_i]==1:
                             #COOP-OFF EFFECT?
                             if 1 in B[block_i+l_rb:block_i+1+(l_rb*coop_d)]:
-                                A[L+(block_ii*2)+1]=k_off-coop_m
+                                A[L+(block_ii*4)+3]=k_off-coop_m
+                                A[L+(block_ii*4)+1]=0
                             else:
-                                A[L+(block_ii*2)+1]=k_off
+                                A[L+(block_ii*4)+1]=k_off
+                                A[L+(block_ii*4)+3]=0
                         
 
                     
@@ -526,7 +547,7 @@ def corini(t=100, L=30, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5, l_rb=1, B
         
     return pd.DataFrame(data=rini_data)
 
-    
+
 
 #Plots a standardised initiation (protein production proxy) value against the number of blockable sites used
 def rini_INIvBLOCK(t=10000, L=100, l=1, a=0.75, b=0.75, p=1, k_on=0.5, k_off=0.5, l_rb=1, B_i=[48, 49, 50], n=10, dataset=False, visual=True, comparison_output=False):
