@@ -408,7 +408,10 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
   3. [Unidirectional constant rate motion of the ribosomal scanning particle during eukaryotic translation initiation; Vassilenko et al.; 2011](https://doi.org/10.1093/nar/gkr147):"The scanning rate is of the same order of magnitude as the movement rate of translating ribosome." / Also notes that ribosome migration is unidirectional and is basically independent of the sequence itself or its secondary structure.
   
 ## Day 41 - 21/03
-
+- Discussed the project with Edward and Ramon: Edward noted the key question surrounding initiation scanning eluded the review and that it should be in the focus for the report (what's known about it, what isn't and why does that lead us to this project.)
+  1. april 10th: submit a report outline
+  2. april 21st: submit the first report draft
+  3. 
 ---
 # Week 11 - 25/03 --> 29/03
 - [ ] 
