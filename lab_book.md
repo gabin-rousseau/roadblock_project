@@ -418,9 +418,17 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 - He also recommended to just plot raw errors, the sign retains some information about the relationship between model and experiment: are we overshooting or undershooting? After all, the best independent run should be undershooting the exp 1s result and overshooting the exp 2s result, for a miminal rms.
 
 - Ate ice-cream. <3
+
 ---
 # Week 11 - 25/03 --> 29/03
-- [ ] 
+- [ ] Write a formula describing the calculations made to reach the parameter space data
+- [ ] Write a results-type paragraph with interpretation describing parameter space output.
+- [ ] Update the jupyter notebook to feature to actualise all annotations as well as the introduction to the notebook keep on updating this with furter changes later on.
+- [ ] Establish a time-scale benchmarked around p = 1.
+- [ ] Draft boundary ideas for
+
+ ## Day 42 - 25/03
+ 
 
 ---
 # Week 12 - 01/04 --> 05/04
