@@ -434,6 +434,11 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 # Week 12 - 01/04 --> 05/04
 - [ ] 
 
+## 03/04
+- I stated the figure contents the exercise parameter space figures, but didn't really explain why these trends were observed.
+- Boxplots too wide: make them more compact.
+- Overall, the format and logic explanations were well received: I am on the right track to make the write-up succesfull with this concept section.
+- This exercise can be described as a detailed outline with bullet points and full sentences. The following approach to make the best use of Edward's and Ramon's feedback will then be to draft a synthetic outline before looking a detailed write-up draft.
 ---
 # SPRING BREAK - 08/04 --> 19/04
 - [ ] Prepare the first report draft for review by Edward and Ramon.
