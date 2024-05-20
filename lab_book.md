@@ -419,28 +419,6 @@ Observables: distance b0b1 (default=0.125), distance b1b2 (default=0.025).
 
 - Ate ice-cream. <3
 
----
-# Week 11 - 25/03 --> 29/03
-- [ ] Write a formula describing the calculations made to reach the parameter space data
-- [ ] Write a results-type paragraph with interpretation describing parameter space output.
-- [ ] Update the jupyter notebook to feature to actualise all annotations as well as the introduction to the notebook keep on updating this with furter changes later on.
-- [ ] Establish a time-scale benchmarked around p = 1.
-- [ ] Draft boundary ideas for
-
- ## Day 42 - 25/03
- 
-
----
-# Week 12 - 01/04 --> 05/04
-- [ ] 
-
-## 03/04
-- I stated the figure contents the exercise parameter space figures, but didn't really explain why these trends were observed.
-- Boxplots too wide: make them more compact. Furthermore, I should highlight the 0,0 origin to help reader focus.
-- Overall, the format and logic explanations were well received: I am on the right track to make the write-up succesfull with this concept section.
-- This exercise can be described as a detailed outline with bullet points and full sentences. The following approach to make the best use of Edward's and Ramon's feedback will then be to draft a synthetic outline before looking a detailed write-up draft.
-
-
 
 
 
